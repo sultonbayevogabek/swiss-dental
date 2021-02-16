@@ -44,12 +44,12 @@
     <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WEB ISHLANMALARIM\swiss-dental\img\appointment" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WEB ISHLANMALARIM\swiss-dental\img\services" />
       <recent name="D:\WEB ISHLANMALARIM\swiss-dental\img\peoplesays" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\WEB ISHLANMALARIM\swiss-dental\img\appointment" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -73,7 +73,7 @@
       <workItem from="1613236753340" duration="2598000" />
       <workItem from="1613297763789" duration="23384000" />
       <workItem from="1613360542578" duration="12162000" />
-      <workItem from="1613488073743" duration="741000" />
+      <workItem from="1613488073743" duration="1097000" />
     </task>
     <servers />
   </component>
