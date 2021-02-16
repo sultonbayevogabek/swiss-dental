@@ -1,0 +1,124 @@
+//============== SECTION NEWS STYLES ================== //
+.news {
+   padding-top: 66px;
+   background-color: rgba(229, 247, 248, 0.5);
+
+   .slick-next {
+      right: 8px;
+      top: -36px;
+      width: 45px;
+      height: 45px;
+      background: #FFFFFF;
+
+      &::before {
+         content: "";
+         width: 45px;
+         height: 45px;
+         display: block;
+         background-image: url(../img/icons/bluearrowr.svg);
+         background-position: center;
+         background-repeat: no-repeat;
+      }
+   }
+
+   .slick-prev {
+      left: 91%;
+      top: -36px;
+      width: 45px;
+      height: 45px;
+      background: #FFFFFF;
+
+      &::before {
+         content: "";
+         width: 45px;
+         height: 45px;
+         display: block;
+         background-image: url(../img/icons/bluearrowl.svg) !important;
+         background-position: center;
+         background-repeat: no-repeat;
+      }
+   }
+
+   .slick-track {
+      padding-top: 66px;
+      padding-bottom: 127px;
+   }
+
+}
+
+.news-slider__item {
+   width: 340px;
+   padding: 0 30px;
+
+   &:focus {
+      outline: none;
+   }
+}
+
+.slider-card {
+   position: relative;
+   width: 100%;
+   height: 375px;
+   background-color: #FFFFFF;
+   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
+   overflow: hidden;
+
+   & > img {
+      width: 100%;
+   }
+
+   &:hover .slider-card__descr {
+      top: 0;
+   }
+
+   &:hover .slider-card__text {
+      opacity: 1;
+   }
+}
+
+.slider-card__descr {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   padding: 24px 20px;
+   background-color: #FFFFFF;
+   transition: 0.5s top, left, bottom, right;
+}
+
+.card__time {
+   display: flex;
+   align-items: center;
+   margin-bottom: 13px;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 20px;
+
+   img {
+      margin-right: 7px;
+   }
+}
+
+.slider-card__title {
+   margin-bottom: 15px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 25px;
+   color: $MAIN-DARK-BLUE;
+
+   &:hover {
+      text-decoration: underline;
+   }
+}
+
+.slider-card__text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   color: $MAIN-DARK-BLUE;
+   opacity: 0;
+
+   &:hover {
+      text-decoration: underline;
+   }
+}
+
