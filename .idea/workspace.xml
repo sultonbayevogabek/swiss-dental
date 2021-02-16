@@ -21,8 +21,8 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -40,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OPENSERVER/domains/Food" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="RecentsManager">
@@ -74,7 +74,7 @@
       <workItem from="1613236753340" duration="2598000" />
       <workItem from="1613297763789" duration="23384000" />
       <workItem from="1613360542578" duration="12162000" />
-      <workItem from="1613488073743" duration="6168000" />
+      <workItem from="1613488073743" duration="11015000" />
     </task>
     <servers />
   </component>

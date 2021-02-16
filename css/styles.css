@@ -1210,6 +1210,8 @@ video {
   cursor: pointer;
 }
 .video-play img {
+  width: 28px;
+  height: 28px;
   filter: drop-shadow(-3px 8px 14px rgba(8, 98, 102, 0.69));
 }
 
