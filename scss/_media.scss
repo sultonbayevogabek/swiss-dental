@@ -208,7 +208,7 @@
    }
 
    .site-footer .container:first-child {
-      padding-bottom: 0!important;
+      padding-bottom: 0 !important;
    }
 }
 
@@ -320,6 +320,7 @@
    .is-useful {
       padding: 20px;
       height: auto;
+
       span {
          display: block;
          width: 100%;
@@ -358,12 +359,13 @@
 
    .doctor {
       position: static;
-      width: 150px!important;
-      height: 150px!important;
+      width: 150px !important;
+      height: 150px !important;
       margin-right: 20px;
       margin-bottom: 20px;
    }
 }
+
 @include media(629px) {
    .slider-card {
       height: 550px;
@@ -502,6 +504,7 @@
       justify-content: center;
    }
 }
+
 @include media(355px) {
    .site-nav__link {
       font-size: 16px;

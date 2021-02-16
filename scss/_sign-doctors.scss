@@ -153,6 +153,7 @@
       height: 120px;
       border-color: #FF9D9D;
    }
+
    &:nth-child(5) {
       right: 45px;
       top: 145px;
@@ -166,10 +167,7 @@
    position: relative;
    display: flex;
    align-items: center;
-   padding-top: 27px;
-   padding-bottom: 27px;
-   padding-left: 48px;
-   padding-right: 45px;
+   padding: 27px 45px 27px 48px;
    background-color: $MAIN-LIGHT-BLUE;
    background-image: url("../img/doctors/bg.png");
    background-repeat: no-repeat;
@@ -195,6 +193,7 @@
    line-height: 30px;
    letter-spacing: 0.02em;
 }
+
 .doctor-info__specials {
    margin-bottom: 24px;
    font-weight: 400;
@@ -208,12 +207,14 @@
    font-size: 20px;
    line-height: 20px;
 }
+
 .doctor-info__tel {
    div:first-child {
       font-weight: 400;
       font-size: 14px;
       line-height: 15px;
    }
+
    div:last-child {
       font-weight: normal;
       font-size: 20px;
