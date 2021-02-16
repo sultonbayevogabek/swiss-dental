@@ -1,75 +1,14 @@
 'use strict';
+//import modules
+import customSelect from "./custom-select";
+import sliderSettings from "./sliders-settings";
+import siteNav from "./site-nav";
 
 document.addEventListener('DOMContentLoaded', () => {
 
-   //slider settings
-
-   $('.single-slider').slick({
-      autoplay: true,
-      dots: true,
-      autoplaySpeed: 2000
-   });
-
-   $('.news-slider').slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      autoplaySpeed: 2000,
-      autoplay: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      responsive: [
-         {
-            breakpoint: 1225,
-            settings: {
-               slidesToShow: 3,
-               slidesToScroll: 1,
-               infinite: true,
-               dots: false
-            }
-         },
-         {
-            breakpoint: 900,
-            settings: {
-               slidesToShow: 2,
-               slidesToScroll: 1
-            }
-         },
-         {
-            breakpoint: 630,
-            settings: {
-               slidesToShow: 1,
-               slidesToScroll: 1
-            }
-         }
-      ]
-   });
-
-   // selector functions
-
-   function selectElement(selector) {
-      return document.querySelector(selector);
-   }
-
-   function selectAllElements(selector) {
-      return document.querySelectorAll(selector);
-   }
-
-   // navigation bar open and close
-
-   const navOpenBtn = selectElement('.nav-open'),
-      navCloseBtn = selectElement('.nav-close'),
-      nav = selectElement('.site-nav__ul');
-
-   navOpenBtn.addEventListener('click', () => {
-      nav.classList.add('nav-show');
-      document.body.style.overflow = 'hidden';
-   })
-
-   navCloseBtn.addEventListener('click', () => {
-      nav.classList.remove('nav-show');
-      document.body.style.overflow = '';
-   })
+   customSelect();
+   sliderSettings();
+   siteNav();
 
    const doctors = [
       {
@@ -114,8 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
    ]
 
-   // doctors info render
-
    const doctorsListWrapper = selectElement('.our-doctors__main');
 
    function doctorsListRender() {
@@ -139,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
    doctorsListRender();
 
    let doctorInfoClose;
-   
+
    function doctorInfoRender(id) {
       let selectedDoctor;
 

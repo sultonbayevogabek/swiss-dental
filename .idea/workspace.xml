@@ -40,11 +40,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../NAJOT TALIM/dars_18" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OPENSERVER/domains/Food" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WEB ISHLANMALARIM\swiss-dental" />
       <recent name="D:\WEB ISHLANMALARIM\swiss-dental\img\appointment" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -73,7 +74,7 @@
       <workItem from="1613236753340" duration="2598000" />
       <workItem from="1613297763789" duration="23384000" />
       <workItem from="1613360542578" duration="12162000" />
-      <workItem from="1613488073743" duration="5360000" />
+      <workItem from="1613488073743" duration="6168000" />
     </task>
     <servers />
   </component>
@@ -101,10 +102,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1613190210471" />
-    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1613215705422">
+    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1613494567355">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1613215705422" />
+    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1613494567355" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1613368099176">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
