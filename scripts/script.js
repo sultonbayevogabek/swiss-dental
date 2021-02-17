@@ -1,5 +1,5 @@
 'use strict';
-//import modules
+
 import customSelect from "./custom-select";
 import sliderSettings from "./sliders-settings";
 import siteNav from "./site-nav";
@@ -15,9 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
          videoTitle: 'Технологии будущего для вашего здоровья'
       }
    ];
-   videoPlay(videosData, '.video-gallery:first-child');
+
    customSelect();
    sliderSettings();
    siteNav();
    doctors();
+
 })

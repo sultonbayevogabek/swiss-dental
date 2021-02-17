@@ -116,15 +116,112 @@
    flex-wrap: wrap;
 }
 
-.tabs__news__card {
+.tabs__card {
+   position: relative;
    width: 280px;
-   height: 300px;
+   height: 375px;
    margin-right: 65px;
    margin-bottom: 65px;
-   background-color: red;
+   background-color: #FFFFFF;
+
+   img {
+      vertical-align: middle;
+   }
 
    &:nth-child(3n) {
       margin-right: 0;
    }
+
+   &:hover .tabs__card__link {
+      transform: none;
+      opacity: 1;
+   }
 }
 
+.tabs__card__header {
+   background-color: rgba($MAIN-LIGHT-BLUE, 0.5);
+}
+
+.tabs__card__body {
+   height: 185px;
+   padding-top: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-left: 1px solid $MAIN-LIGHT-BLUE;
+   border-right: 1px solid $MAIN-LIGHT-BLUE;
+   border-bottom: 1px solid $MAIN-LIGHT-BLUE;
+
+   time {
+      display: flex;
+      align-items: center;
+      margin-bottom: 13px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+
+      img {
+         margin-right: 7px;
+      }
+   }
+
+   h3 {
+      padding-bottom: auto;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+   }
+}
+
+.tabs__card__link {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: red;
+   padding-top: 38px;
+   padding-left: 20px;
+   padding-right: 20px;
+   background-color: $WHITE;
+   border: 1px solid $MAIN-LIGHT-BLUE;
+   color: $MAIN-DARK-BLUE;
+   cursor: pointer;
+   transition: 0.2s all linear;
+   transform: scaleY(0);
+   transform-origin: center bottom;
+
+   time {
+      display: flex;
+      align-items: center;
+      margin-bottom: 22px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+
+      img {
+         margin-right: 7px;
+      }
+   }
+
+   h3 {
+      margin-bottom: 15px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+   }
+
+   p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+   }
+
+   a {
+      color: $MAIN-DARK-BLUE;
+
+      &:hover {
+         color: $MAIN-LIGHT-BLUE;
+         text-decoration: underline;
+      }
+   }
+}

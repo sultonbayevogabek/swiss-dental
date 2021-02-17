@@ -1578,15 +1578,102 @@ video {
   flex-wrap: wrap;
 }
 
-.tabs__news__card {
+.tabs__card {
+  position: relative;
   width: 280px;
-  height: 300px;
+  height: 375px;
   margin-right: 65px;
   margin-bottom: 65px;
-  background-color: red;
+  background-color: #FFFFFF;
 }
-.tabs__news__card:nth-child(3n) {
+.tabs__card img {
+  vertical-align: middle;
+}
+.tabs__card:nth-child(3n) {
   margin-right: 0;
+}
+.tabs__card:hover .tabs__card__link {
+  transform: none;
+  opacity: 1;
+}
+
+.tabs__card__header {
+  background-color: rgba(0, 177, 185, 0.5);
+}
+
+.tabs__card__body {
+  height: 185px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 1px solid #00B1B9;
+  border-right: 1px solid #00B1B9;
+  border-bottom: 1px solid #00B1B9;
+}
+.tabs__card__body time {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+.tabs__card__body time img {
+  margin-right: 7px;
+}
+.tabs__card__body h3 {
+  padding-bottom: auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.tabs__card__link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  padding-top: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #00B1B9;
+  color: #29295F;
+  cursor: pointer;
+  transition: 0.2s all linear;
+  transform: scaleY(0);
+  transform-origin: center bottom;
+}
+.tabs__card__link time {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+.tabs__card__link time img {
+  margin-right: 7px;
+}
+.tabs__card__link h3 {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+.tabs__card__link p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+.tabs__card__link a {
+  color: #29295F;
+}
+.tabs__card__link a:hover {
+  color: #00B1B9;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1300px) {
