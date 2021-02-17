@@ -5,6 +5,7 @@ import sliderSettings from "./sliders-settings";
 import siteNav from "./site-nav";
 import doctors from "./doctors";
 import videoPlay from "./video-play";
+import tabs from './tabs';
 
 document.addEventListener('DOMContentLoaded', () => {
    const videosData = [
@@ -20,5 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
    sliderSettings();
    siteNav();
    doctors();
+   tabs();
 
 })
