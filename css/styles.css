@@ -249,7 +249,7 @@ img {
   color: #29295F;
   transition: 0.2s all ease;
 }
-.site-nav__link:hover {
+.site-nav__link:hover, .site-nav__link--active {
   color: #00B1B9;
 }
 
@@ -1466,6 +1466,127 @@ video {
 }
 .site-footer__info__li:last-child a {
   text-decoration: underline;
+}
+
+.tabs {
+  padding-top: 70px;
+}
+.tabs .container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tabs__menu {
+  position: sticky;
+  top: 40px;
+  margin-bottom: 40px;
+}
+
+.tabs__menu__ul {
+  width: 220px;
+  height: 270px;
+  border-right: 1px solid rgba(0, 177, 185, 0.3);
+}
+
+.tabs__menu__li {
+  position: relative;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #29295F;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.tabs__menu__li:hover {
+  color: #00B1B9;
+}
+.tabs__menu__li:after {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  display: none;
+  content: "";
+  width: 3px;
+  height: 40px;
+  background: #00B1B9;
+}
+
+.tabs__menu__li--active {
+  color: #00B1B9;
+}
+.tabs__menu__li--active::after {
+  display: block;
+}
+
+.tabs__content {
+  padding-left: 54px;
+}
+
+.tabs__about {
+  width: 805px;
+  padding-bottom: 170px;
+}
+.tabs__about h2 {
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 171.36%;
+}
+.tabs__about p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 172.4%;
+}
+
+.tabs__about__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.tabs__about__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 387px;
+  height: 107px;
+  margin-bottom: 30px;
+  padding-left: 26px;
+  padding-right: 46px;
+  border: 1px dashed #00B1B9;
+}
+.tabs__about__card span {
+  margin-right: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.tabs__news {
+  width: 970px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs__news__card {
+  width: 280px;
+  height: 300px;
+  margin-right: 65px;
+  margin-bottom: 65px;
+  background-color: red;
+}
+.tabs__news__card:nth-child(3n) {
+  margin-right: 0;
 }
 
 @media only screen and (max-width: 1300px) {

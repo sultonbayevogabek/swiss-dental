@@ -1,0 +1,130 @@
+// ============== TABS STYLES =============== //
+.tabs {
+   padding-top: 70px;
+
+   .container {
+      display: flex;
+      align-items: flex-start;
+   }
+}
+
+.tabs__menu {
+   position: sticky;
+   top: 40px;
+   margin-bottom: 40px;
+}
+
+.tabs__menu__ul {
+   width: 220px;
+   height: 270px;
+   border-right: 1px solid rgba(0, 177, 185, 0.3);
+}
+
+.tabs__menu__li {
+   position: relative;
+   margin-bottom: 32px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 20px;
+   color: $MAIN-DARK-BLUE;
+   cursor: pointer;
+   transition: 0.2s;
+
+   &:hover {
+      color: $MAIN-LIGHT-BLUE;
+   }
+
+   &:after {
+      position: absolute;
+      top: 0;
+      right: -2px;
+      display: none;
+      content: "";
+      width: 3px;
+      height: 40px;
+      background: $MAIN-LIGHT-BLUE;
+   }
+}
+
+.tabs__menu__li--active {
+   color: $MAIN-LIGHT-BLUE;
+
+   &::after {
+      display: block;
+   }
+}
+
+.tabs__content {
+   padding-left: 54px;
+}
+
+.tabs__about {
+   width: 805px;
+   padding-bottom: 170px;
+
+   h2 {
+      margin-bottom: 23px;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 171.36%
+   }
+
+   p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 172.4%;
+   }
+}
+
+.tabs__about__cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 50px;
+}
+
+.tabs__about__card {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 387px;
+   height: 107px;
+   margin-bottom: 30px;
+   padding-left: 26px;
+   padding-right: 46px;
+   border: 1px dashed $MAIN-LIGHT-BLUE;
+
+   span {
+      margin-right: 30px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 21px;
+   }
+}
+
+.mb-70 {
+   margin-bottom: 70px;
+}
+
+.mb-20 {
+   margin-bottom: 20px;
+}
+
+.tabs__news {
+   width: 970px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.tabs__news__card {
+   width: 280px;
+   height: 300px;
+   margin-right: 65px;
+   margin-bottom: 65px;
+   background-color: red;
+
+   &:nth-child(3n) {
+      margin-right: 0;
+   }
+}
+

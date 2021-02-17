@@ -30,7 +30,7 @@
    color: $MAIN-DARK-BLUE;
    transition: 0.2s all ease;
 
-   &:hover {
+   &:hover, &--active {
       color: $MAIN-LIGHT-BLUE;
    }
 }

@@ -21,29 +21,19 @@ function videoPlay(array, selector) {
          </div>
       `
    })
-   const playButtons = selectAllElements('.video-play'),
-      allVideos = selectAllElements('video');
+   const playButton = selectElement('.video-play'),
+      video = selectElement('video'),
+      icon = playButton.querySelector('img');
 
-   playButtons.forEach(btn => {
-      btn.addEventListener('click', e => {
-         allVideos.forEach(video => {
-            video.pause()
-            const pauseBtnIcon = video.nextElementSibling.querySelector('img');
-            pauseBtnIcon.src = 'img/icons/play.svg';
-         });
-         
-         const currentBtn = e.currentTarget,
-            currentBtnIcon = currentBtn.querySelector('img'),
-            currentVideo = currentBtn.previousElementSibling;
 
-         if (currentVideo.paused) {
-            currentVideo.play();
-            currentBtnIcon.src = 'img/icons/pause.svg';
-         } else {
-            currentVideo.pause();
-            currentBtnIcon.src = 'img/icons/play.svg';
-         }
-      })
+   playButton.addEventListener('click', e => {
+      if (video.paused) {
+         video.play();
+         icon.src = 'img/icons/pause.svg';
+      } else {
+         video.pause();
+         icon.src = 'img/icons/play.svg';
+      }
    })
 }
 
