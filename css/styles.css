@@ -845,66 +845,14 @@ img {
 .news-slider__item:focus {
   outline: none;
 }
-
-.slider-card {
-  position: relative;
-  width: 100%;
-  height: 375px;
-  background-color: #FFFFFF;
+.news-slider__item .tabs__card {
   box-shadow: 0 84px 94px rgba(7, 79, 82, 0.2);
-  overflow: hidden;
 }
-.slider-card > img {
-  width: 100%;
+.news-slider__item .tabs__card__body {
+  border: none;
 }
-.slider-card:hover .slider-card__descr {
-  top: 0;
-}
-.slider-card:hover .slider-card__text {
-  opacity: 1;
-}
-
-.slider-card__descr {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 24px 20px;
-  background-color: #FFFFFF;
-  transition: 0.5s top, left, bottom, right;
-}
-
-.card__time {
-  display: flex;
-  align-items: center;
-  margin-bottom: 13px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 20px;
-}
-.card__time img {
-  margin-right: 7px;
-}
-
-.slider-card__title {
-  margin-bottom: 15px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  color: #29295F;
-}
-.slider-card__title:hover {
-  text-decoration: underline;
-}
-
-.slider-card__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
-  color: #29295F;
-  opacity: 0;
-}
-.slider-card__text:hover {
-  text-decoration: underline;
+.news-slider__item .tabs__card__link {
+  border: none;
 }
 
 .sign-doctors {
@@ -1595,6 +1543,7 @@ video {
 .tabs__card:hover .tabs__card__link {
   transform: none;
   opacity: 1;
+  box-shadow: 0 84px 94px rgba(7, 79, 82, 0.2);
 }
 
 .tabs__card__header {
@@ -1742,10 +1691,6 @@ video {
   .comment__text {
     font-size: 16px;
     line-height: 20px;
-  }
-
-  .slider-card {
-    width: 100%;
   }
 
   .news {
@@ -2062,10 +2007,6 @@ video {
   }
 }
 @media only screen and (max-width: 629px) {
-  .slider-card {
-    height: 550px;
-  }
-
   .campaign__section {
     margin-bottom: 20px !important;
     padding-top: 20px;

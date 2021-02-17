@@ -70,10 +70,6 @@
       line-height: 20px;
    }
 
-   .slider-card {
-
-      width: 100%;
-   }
 
    .news {
       padding-top: 30px;
@@ -402,10 +398,6 @@
 }
 
 @include media(629px) {
-   .slider-card {
-      height: 550px;
-   }
-
    .campaign__section {
       margin-bottom: 20px !important;
       padding-top: 20px;
