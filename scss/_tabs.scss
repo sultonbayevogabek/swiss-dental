@@ -225,3 +225,25 @@
       }
    }
 }
+
+.tabs__photos {
+   width: 875px;
+
+   img {
+      vertical-align: middle;
+   }
+
+   .row {
+      margin-bottom: 24px;
+   }
+}
+
+.middle__top {
+   margin-bottom: 11px;
+}
+
+.middle__bottom {
+   display: flex;
+   justify-content: space-between;
+}
+
