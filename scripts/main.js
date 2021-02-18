@@ -1,4 +1,5 @@
-function customSelect() {
+document.addEventListener('DOMContentLoaded', () => {
+   // custom select element for languages
    let x, i, j, l, ll, selElmnt, a, b, c;
 
    for (l = (x = document.getElementsByClassName("custom-select")).length, i = 0; i < l; i++) {
@@ -10,7 +11,7 @@ function customSelect() {
             break
          }
          i.click()
-      }), b.appendChild(c);
+      }),b.appendChild(c);
       x[i].appendChild(b), a.addEventListener("click", function (e) {
          e.stopPropagation(), closeAllSelect(this), this.nextSibling.classList.toggle("select-hide"), this.classList.toggle("select-arrow-active")
       })
@@ -23,6 +24,19 @@ function customSelect() {
    }
 
    document.addEventListener("click", closeAllSelect);
-}
 
-export default customSelect;
+   //navigation bar close and open
+   const navOpenBtn = document.querySelector('.nav-open'),
+      navCloseBtn = document.querySelector('.nav-close'),
+      nav = document.querySelector('.site-nav__ul');
+
+   navOpenBtn.addEventListener('click', () => {
+      nav.classList.add('nav-show');
+      document.body.style.overflow = 'hidden';
+   })
+
+   navCloseBtn.addEventListener('click', () => {
+      nav.classList.remove('nav-show');
+      document.body.style.overflow = '';
+   })
+})

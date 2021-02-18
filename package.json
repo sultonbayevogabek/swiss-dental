@@ -19,8 +19,5 @@
     "url": "https://github.com/sultonbayevogabek/swiss-dental/issues"
   },
   "homepage": "https://github.com/sultonbayevogabek/swiss-dental#readme",
-  "devDependencies": {
-    "webpack": "^5.22.0",
-    "webpack-cli": "^4.5.0"
-  }
+  "devDependencies": {}
 }

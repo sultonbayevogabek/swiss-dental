@@ -1,5 +1,3 @@
-import {selectAllElements, selectElement} from "./selector-functions";
-
 function videoPlay(array, selector) {
 
    const videosGallery = selectElement(selector);
@@ -36,5 +34,3 @@ function videoPlay(array, selector) {
       }
    })
 }
-
-export default videoPlay;
