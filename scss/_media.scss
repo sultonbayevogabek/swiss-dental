@@ -166,7 +166,7 @@
 }
 
 @include media(1160px) {
-   .video-gallery {
+   .gallery__section {
       width: 100% !important;
 
       &:first-child {
@@ -179,7 +179,11 @@
       height: auto;
    }
 
-   .video-gallery__header {
+   .video-wrapper {
+      margin-bottom: 30px;
+   }
+
+   .gallery__section__header {
       margin-bottom: 30px;
    }
 }

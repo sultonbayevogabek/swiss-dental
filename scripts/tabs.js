@@ -1,6 +1,7 @@
 const tabsMenuListItems = document.querySelectorAll('.tabs__menu__li'),
    tabsContentItems = document.querySelectorAll('.tabs__content__item'),
-   tabsMenuList = document.querySelector('.tabs__menu__ul');
+   tabsMenuList = document.querySelector('.tabs__menu__ul'),
+   tabsContent = document.querySelector('.tabs__content');
 
 function hideTabContent() {
    tabsContentItems.forEach(item => {
@@ -22,7 +23,7 @@ showTabContent();
 
 tabsMenuList.addEventListener('click', e => {
    const target = e.target;
-   document.documentElement.scrollTop = 0;
+   tabsContent.scrollTop = 0;
    tabsMenuListItems.forEach((item, index) => {
       if (item === target) {
          hideTabContent();

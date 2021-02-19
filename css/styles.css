@@ -1107,28 +1107,28 @@ img {
   justify-content: space-between;
 }
 
-.video-gallery {
+.gallery__section {
   width: 484px;
 }
-.video-gallery:last-child {
+.gallery__section:last-child {
   width: 625px;
 }
 
-.video-gallery__header {
+.gallery__section__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 52px;
 }
 
-.video-gallery__title span {
+.gallery__section__title span {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #29295F;
 }
-.video-gallery__title h2 {
+.gallery__section__title h2 {
   font-weight: 700;
   font-size: 28px;
   line-height: 46px;
@@ -1136,17 +1136,20 @@ img {
   color: #29295F;
 }
 
-.video {
+.video-wrapper {
+  width: 484px;
+}
+.video-wrapper h3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.video-wrapper__video {
   position: relative;
   margin-bottom: 54px;
 }
-
-video {
-  width: 484px;
-  height: 250px;
-}
-
-.video-play {
+.video-wrapper__video button {
   position: absolute;
   bottom: -45px;
   left: 23px;
@@ -1161,16 +1164,15 @@ video {
   box-shadow: -10px 12px 64px rgba(0, 177, 185, 0.7);
   cursor: pointer;
 }
-.video-play img {
+.video-wrapper__video button img {
   width: 28px;
   height: 28px;
   filter: drop-shadow(-3px 8px 14px rgba(8, 98, 102, 0.69));
 }
 
-.video-gallery__text {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 34px;
+video {
+  width: 484px;
+  height: 250px;
 }
 
 .photos {
@@ -1586,7 +1588,6 @@ video {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: red;
   padding-top: 38px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1645,6 +1646,16 @@ video {
 .middle__bottom {
   display: flex;
   justify-content: space-between;
+}
+
+.tabs__videos {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tabs__videos .video-wrapper {
+  margin-bottom: 87px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1806,10 +1817,10 @@ video {
   }
 }
 @media only screen and (max-width: 1160px) {
-  .video-gallery {
+  .gallery__section {
     width: 100% !important;
   }
-  .video-gallery:first-child {
+  .gallery__section:first-child {
     margin-bottom: 30px;
   }
 
@@ -1818,7 +1829,11 @@ video {
     height: auto;
   }
 
-  .video-gallery__header {
+  .video-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .gallery__section__header {
     margin-bottom: 30px;
   }
 }
