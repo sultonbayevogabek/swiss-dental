@@ -624,16 +624,15 @@
             </a>
          </header>
          <div class="video-wrapper">
-            <div class="video-wrapper__video">
-               <video>
-                  <source src="media/video.mp4" type="">
-               </video>
-               <button>
-                  <img src="img/icons/play.svg" alt="">
-               </button>
+            <div class="video-wrapper">
+               <div class="video-wrapper__video" data-index="0">
+                  <img src='https://picsum.photos/484/250' alt="">
+                  <button>
+                     <img src="img/icons/play.svg" alt="">
+                  </button>
+               </div>
+               <h3>Технологии будущего для вашего здоровья</h3>
             </div>
-            <h3>Технологии будущего для
-               вашего здоровья</h3>
          </div>
       </section>
       <section class="gallery__section">
@@ -780,11 +779,13 @@
       <div>Сайт разработана в студи Pixer</div>
    </div>
 </footer>
-
+<!--VIDEO MODAL-->
+<div class="video-modal hide"></div>
 <script src="scripts/jquery.js"></script>
 <script src="scripts/slick.js"></script>
 <script src="scripts/main.js"></script>
 <script src="scripts/sliders-settings.js"></script>
 <script src="scripts/doctors.js"></script>
+<script src="scripts/video-play.js"></script>
 </body>
 </html>

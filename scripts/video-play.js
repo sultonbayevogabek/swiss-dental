@@ -98,9 +98,11 @@ function openVideoModal(index) {
 function closeVideoModal() {
    document.body.style.overflow = '';
    videoModal.classList.add('hide');
+   videoModal.innerHTML = '';
 }
 
 window.addEventListener('keydown', e => {
-   if (e.key === 'Escape')
+   if (e.key === 'Escape') {
       closeVideoModal();
+   }
 })

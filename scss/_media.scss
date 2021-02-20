@@ -135,12 +135,42 @@
       padding-top: 30px;
       padding-left: 30px;
    }
+
+   .tabs__menu {
+      position: static;
+      width: 100%;
+   }
+
+   .tabs__menu__ul {
+      width: 100%;
+      height: auto;
+   }
+
+   .tabs__content {
+      padding-left: 0;
+   }
+
+   .tabs__about {
+      width: 100%;
+      padding-bottom: 30px;
+   }
+   .tabs__news {
+      width: 100%;
+      justify-content: space-evenly;
+   }
+   .tabs__card {
+      margin: 0 0 30px 0;
+   }
 }
 
 @include media(1270px) {
    .campaign__section {
       width: 100%;
       margin-bottom: 20px;
+   }
+
+   .tabs__about__cards {
+      justify-content: space-evenly;
    }
 }
 
@@ -300,6 +330,13 @@
    }
    .doctor-info__tel div:last-child {
       font-size: 14px;
+   }
+}
+
+@include media(830px) {
+   .tabs__about__card {
+      width: 100%;
+      padding-right: 26px;
    }
 }
 
@@ -506,6 +543,24 @@
 @include media(390px) {
    .our-doctors__main {
       justify-content: center;
+   }
+
+   .tabs__about {
+      h2 {
+         font-size: 20px;
+      }
+
+      p {
+         font-size: 16px;
+      }
+   }
+   .tabs__about__card {
+      span {
+         font-size: 16px;
+      }
+      img {
+         width: 40px;
+      }
    }
 }
 
