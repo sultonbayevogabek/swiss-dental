@@ -1,46 +1,52 @@
-const tabsMenuListItems = document.querySelectorAll('.tabs__menu__li'),
-   tabsContentItems = document.querySelectorAll('.tabs__content__item'),
-   tabsMenuList = document.querySelector('.tabs__menu__ul'),
-   tabsContent = document.querySelector('.tabs__content');
+document.addEventListener('DOMContentLoaded', () => {
 
-let selectedTabIndex = 0;
+   const tabsMenuListItems = document.querySelectorAll('.tabs__menu__li'),
+      tabsContentItems = document.querySelectorAll('.tabs__content__item'),
+      tabsMenuList = document.querySelector('.tabs__menu__ul'),
+      tabsContent = document.querySelector('.tabs__content');
 
-if (localStorage.getItem('selectedTabIndex')) {
-   selectedTabIndex = localStorage.getItem('selectedTabIndex');
-}
+   let selectedTabIndex;
 
-function hideTabContent() {
-   tabsContentItems.forEach(item => {
-      item.classList.add('hide');
-   });
+   if (localStorage.getItem('selectedTabIndex')) {
+      selectedTabIndex = localStorage.getItem('selectedTabIndex');
+   } else {
+      selectedTabIndex = 0;
+   }
 
-   tabsMenuListItems.forEach(item => {
-      item.classList.remove('tabs__menu__li--active');
-   });
-}
+   function hideTabContent() {
+      tabsContentItems.forEach(item => {
+         item.classList.add('hide');
+      });
 
-function showTabContent(i = selectedTabIndex) {
-   tabsContentItems[i].classList.remove('hide');
-   tabsMenuListItems[i].classList.add('tabs__menu__li--active');
-}
+      tabsMenuListItems.forEach(item => {
+         item.classList.remove('tabs__menu__li--active');
+      });
+   }
 
-hideTabContent();
-showTabContent();
+   function showTabContent(i = selectedTabIndex) {
+      tabsContentItems[i].classList.remove('hide');
+      tabsMenuListItems[i].classList.add('tabs__menu__li--active');
+   }
 
-tabsMenuList.addEventListener('click', e => {
-   const target = e.target;
-   tabsContent.scrollTop = 0;
-   tabsMenuListItems.forEach((item, index) => {
-      if (item === target) {
-         hideTabContent();
-         showTabContent(index);
-         localStorage.setItem('selectedTabIndex', index)
+   hideTabContent();
+   showTabContent();
 
-         if (index !== 0) {
-            document.querySelector('.feedback').style.display = 'none';
-         } else {
-            document.querySelector('.feedback').style.display = 'block';
+   tabsMenuList.addEventListener('click', e => {
+      const target = e.target;
+      tabsMenuListItems.forEach((item, index) => {
+         if (item === target) {
+            hideTabContent();
+            showTabContent(index);
+            localStorage.setItem('selectedTabIndex', index)
+
+            if (index !== 0) {
+               document.querySelector('.feedback').style.display = 'none';
+            } else {
+               document.querySelector('.feedback').style.display = 'block';
+            }
          }
-      }
+      })
    })
+
+
 })

@@ -3,6 +3,7 @@
    .slider .container {
       background-size: 30%;
    }
+
    .services {
       padding-top: 30px;
    }
@@ -70,7 +71,6 @@
       line-height: 20px;
    }
 
-
    .news {
       padding-top: 30px;
 
@@ -110,10 +110,12 @@
       padding-top: 30px;
       padding-bottom: 30px;
    }
+
    .is-useful {
       width: 100%;
       margin-bottom: 20px;
    }
+
    .share {
       width: 100%;
    }
@@ -147,6 +149,7 @@
    }
 
    .tabs__content {
+      width: 100%;
       padding-left: 0;
    }
 
@@ -154,10 +157,12 @@
       width: 100%;
       padding-bottom: 30px;
    }
+
    .tabs__news {
       width: 100%;
       justify-content: space-evenly;
    }
+
    .tabs__card {
       margin: 0 0 30px 0;
    }
@@ -171,6 +176,15 @@
 
    .tabs__about__cards {
       justify-content: space-evenly;
+   }
+
+   .tabs__card {
+      width: 32%;
+      height: auto;
+   }
+
+   .tabs__card__header img {
+      width: 100%;
    }
 }
 
@@ -254,6 +268,24 @@
    .social-links {
       margin-bottom: 45px;
    }
+
+   .tabs__videos {
+      width: 100%;
+   }
+
+   .video-wrapper {
+      width: 48%;
+
+      h3 {
+         font-size: 20px;
+         line-height: 1;
+      }
+   }
+
+   .video-wrapper__video img {
+      width: 100%;
+      height: auto;
+   }
 }
 
 @include media(1010px) {
@@ -310,6 +342,33 @@
    .for-blinds, .custom-select {
       margin-right: 0;
    }
+
+   .tabs__photos {
+      width: 100%;
+   }
+
+   .left, .right {
+      width: 100%;
+
+      img {
+         width: 100%;
+         margin-bottom: 20px;
+      }
+   }
+
+   .middle {
+      width: 100%;
+
+      &__top img {
+         width: 100%;
+         margin-bottom: 20px;
+      }
+
+      &__bottom img {
+         width: 49%;
+         margin-bottom: 20px;
+      }
+   }
 }
 
 @include media(900px) {
@@ -337,6 +396,10 @@
    .tabs__about__card {
       width: 100%;
       padding-right: 26px;
+   }
+
+   .tabs__card {
+      width: 48%;
    }
 }
 
@@ -436,6 +499,22 @@
       width: 100%;
       text-align: center;
    }
+
+   .video-wrapper {
+      width: 100%;
+      margin-bottom: 30px!important;
+   }
+
+   .video-wrapper__video button {
+      width: 50px;
+      height: 50px;
+      bottom: -24px;
+
+      img {
+         width: 20px;
+         height: 20px;
+      }
+   }
 }
 
 @include media(629px) {
@@ -485,6 +564,10 @@
       img {
          height: 14px;
       }
+   }
+
+   .tabs__card {
+      width: 100%;
    }
 }
 
@@ -558,6 +641,7 @@
       span {
          font-size: 16px;
       }
+
       img {
          width: 40px;
       }

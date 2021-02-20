@@ -1,4 +1,3 @@
-const
-function newsListRender() {
+document.addEventListener('DOMContentLoaded', () => {
 
-}
+})

@@ -1825,6 +1825,7 @@ img {
   }
 
   .tabs__content {
+    width: 100%;
     padding-left: 0;
   }
 
@@ -1850,6 +1851,15 @@ img {
 
   .tabs__about__cards {
     justify-content: space-evenly;
+  }
+
+  .tabs__card {
+    width: 32%;
+    height: auto;
+  }
+
+  .tabs__card__header img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1245px) {
@@ -1929,6 +1939,23 @@ img {
   .social-links {
     margin-bottom: 45px;
   }
+
+  .tabs__videos {
+    width: 100%;
+  }
+
+  .video-wrapper {
+    width: 48%;
+  }
+  .video-wrapper h3 {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .video-wrapper__video img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 1010px) {
   .site-nav__ul {
@@ -1983,6 +2010,30 @@ img {
   .for-blinds, .custom-select {
     margin-right: 0;
   }
+
+  .tabs__photos {
+    width: 100%;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+  .left img, .right img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .middle {
+    width: 100%;
+  }
+  .middle__top img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .middle__bottom img {
+    width: 49%;
+    margin-bottom: 20px;
+  }
 }
 @media only screen and (max-width: 900px) {
   .doctor-info {
@@ -2010,6 +2061,10 @@ img {
   .tabs__about__card {
     width: 100%;
     padding-right: 26px;
+  }
+
+  .tabs__card {
+    width: 48%;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -2103,6 +2158,21 @@ img {
     width: 100%;
     text-align: center;
   }
+
+  .video-wrapper {
+    width: 100%;
+    margin-bottom: 30px !important;
+  }
+
+  .video-wrapper__video button {
+    width: 50px;
+    height: 50px;
+    bottom: -24px;
+  }
+  .video-wrapper__video button img {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media only screen and (max-width: 629px) {
   .campaign__section {
@@ -2142,6 +2212,10 @@ img {
   }
   .campaign__section__socials img {
     height: 14px;
+  }
+
+  .tabs__card {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 500px) {
