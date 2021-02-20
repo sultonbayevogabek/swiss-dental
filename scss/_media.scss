@@ -369,6 +369,11 @@
          margin-bottom: 20px;
       }
    }
+
+   .video-modal iframe {
+      width: 90%;
+      height: 350px;
+   }
 }
 
 @include media(900px) {
@@ -568,6 +573,14 @@
 
    .tabs__card {
       width: 100%;
+   }
+
+   .video-modal iframe {
+      height: 250px;
+   }
+
+   .video-modal button {
+      font-size: 30px;
    }
 }
 

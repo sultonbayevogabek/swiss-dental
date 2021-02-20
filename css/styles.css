@@ -1188,8 +1188,8 @@ img {
 }
 .video-modal button {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   border: none;
   background-color: transparent;
   font-size: 50px;
@@ -2034,6 +2034,11 @@ img {
     width: 49%;
     margin-bottom: 20px;
   }
+
+  .video-modal iframe {
+    width: 90%;
+    height: 350px;
+  }
 }
 @media only screen and (max-width: 900px) {
   .doctor-info {
@@ -2216,6 +2221,14 @@ img {
 
   .tabs__card {
     width: 100%;
+  }
+
+  .video-modal iframe {
+    height: 250px;
+  }
+
+  .video-modal button {
+    font-size: 30px;
   }
 }
 @media only screen and (max-width: 500px) {
