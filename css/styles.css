@@ -1149,6 +1149,9 @@ img {
   position: relative;
   margin-bottom: 54px;
 }
+.video-wrapper__video img {
+  vertical-align: middle;
+}
 .video-wrapper__video button {
   position: absolute;
   bottom: -45px;
@@ -1170,9 +1173,26 @@ img {
   filter: drop-shadow(-3px 8px 14px rgba(8, 98, 102, 0.69));
 }
 
-video {
-  width: 484px;
-  height: 250px;
+.video-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-modal button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
 }
 
 .photos {
