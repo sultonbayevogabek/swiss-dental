@@ -58,12 +58,12 @@
             </a>
          </li>
          <li class="site-nav__li">
-            <a class="site-nav__link site-nav__link--active" href="cosmetic.html">
+            <a class="site-nav__link" href="cosmetic.html">
                Косметическая стоматология
             </a>
          </li>
          <li class="site-nav__li">
-            <a class="site-nav__link" href="treatment.html">
+            <a class="site-nav__link site-nav__link--active" href="treatment.html">
                Лечение
             </a>
          </li>
@@ -81,57 +81,33 @@
       </ul>
    </div>
 </nav>
+<!--LOGIN FORM SECTION-->
+<main class="login-section">
+   <h2>Вход в аккаунт</h2>
+   <span>Введите пожалуста ваше логин и пароль</span>
+   <form class="login-form" action="#" method="get">
+      <div class="login-form__field mb-20">
+         <input type="text" name="login" id="login" placeholder=" ">
+         <label for="login">Логин</label>
+      </div>
+      <div class="login-form__field mb-70">
+         <input type="password" name="password" id="password" placeholder=" ">
+         <label for="password">Пароль</label>
+      </div>
+      <button class="login-form__submit">
+         <img src="img/icons/login.svg" alt="">
+         <span>Вход</span>
+      </button>
+      
+      <div class="register-forgot">
+         <a href="#">Забыли пароль?</a> /
+         <a href="#">Регистрация</a>
+      </div>
+   </form>
+</main>
 <!--SLIDER SECTION-->
 <h1>Bu shunchaki sarlavha</h1>
-<main class="site-main">
-   <div class="container">
-      <article class="article">
-         <section class="article__description pt-0">
-            <h2>Косметическая стоматология - это давно установленный факт, который отвлекает читателя.</h2>
-            <p>Давно установлено, что читатель будет отвлекаться на удобочитаемое содержимое страницы при просмотре ее
-               макета. Смысл использования Lorem Ipsum в том, что он имеет более или менее нормальное распределение
-               букв, в отличие от использования «Контент здесь, контент здесь», что делает его похожим на читаемый
-               английский. Многие настольные издательские пакеты и редакторы веб-страниц теперь используют Lorem Ipsum в
-               качестве текста модели по умолчанию, а поиск по запросу «lorem ipsum» обнаружит многие веб-сайты, все еще
-               находящиеся в зачаточном состоянии. С годами появились разные версии, иногда случайно, иногда
-               специально.</p>
-            <div class="article__description__gallery">
-               <figure>
-                  <img src="img/doctors/dentist3.png" alt="" width="400" height="260">
-                  <figcaption>Давно установлено, что читатель будет отвлекаться на читаемое.</figcaption>
-               </figure>
-               <figure>
-                  <img src="img/doctors/dentist4.png" alt="" width="400" height="260">
-                  <figcaption>Давно установлено, что читатель будет отвлекаться на читаемое.</figcaption>
-               </figure>
-            </div>
-            <p>Многие настольные издательские пакеты и редакторы веб-страниц теперь используют Lorem Ipsum в качестве
-               текста модели по умолчанию, а поиск по запросу «lorem ipsum» обнаружит многие веб-сайты, все еще
-               находящиеся в зачаточном состоянии. Иногда с годами развивались различные версии.</p>
-         </section>
-      </article>
-      <aside class="appointment">
-         <h2>Записатся<br>
-            на прием</h2>
-         <form class="appointment__form" action="#" method="get">
-            <input id="full-name" type="text" name="full_name" placeholder="Имя Фамилия">
-            <input class="masked-phone" id="phone_number" type="tel" name="phone_number" data-phonemask="+998 ( _ _ )  _ _ _  _ _  _ _" />
-            <div class="custom-select">
-               <select name="type_services">
-                  <option value="0">Косметическая стоматология</option>
-                  <option value="1">Ортопедия</option>
-                  <option value="2">Терапевтическая</option>
-                  <option value="3">Имплантология</option>
-               </select>
-            </div>
-            <button type="submit">
-               <img src="img/icons/bell.svg" alt="">
-               <span>Записатся</span>
-            </button>
-         </form>
-      </aside>
-   </div>
-</main>
+
 <!--SITE FOOTER-->
 <footer class="site-footer">
    <div class="container">
@@ -188,7 +164,7 @@
       <div>Сайт разработана в студи Pixer</div>
    </div>
 </footer>
-<script src="scripts/form.js"></script>
+
 <script src="scripts/main.js"></script>
 </body>
 </html>
