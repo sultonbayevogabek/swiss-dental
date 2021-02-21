@@ -22,6 +22,38 @@
    }
 }
 
+.login-form {
+   input:placeholder-shown + label {
+      cursor: text;
+      max-width: 66.66%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transform-origin: left bottom;
+      transform: translate(0, 2.125rem) scale(1.5);
+      font-weight: 400;
+      font-size: 13.333px;
+      line-height: 13.333px;
+   }
+
+   ::-webkit-input-placeholder {
+      opacity: 0;
+      transition: inherit;
+   }
+
+   input:focus::-webkit-input-placeholder {
+      opacity: 1;
+   }
+
+   input:not(:placeholder-shown) + label, input:focus + label {
+      transform: translate(0, 0) scale(1);
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+   }
+}
+
 .login-form__submit {
    display: flex;
    align-items: center;
@@ -55,6 +87,7 @@ label, input {
    flex-flow: column-reverse;
 
    input {
+      width: 290px;
       padding: 15px 0;
       background-color: transparent;
       border: none;
@@ -77,33 +110,4 @@ label, input {
          color: $MAIN-LIGHT-BLUE;
       }
    }
-}
-input:placeholder-shown + label {
-   cursor: text;
-   max-width: 66.66%;
-   white-space: nowrap;
-   overflow: hidden;
-   text-overflow: ellipsis;
-   transform-origin: left bottom;
-   transform: translate(0, 2.125rem) scale(1.5);
-   font-weight: 400;
-   font-size: 13.333px;
-   line-height: 13.333px;
-}
-
-::-webkit-input-placeholder {
-   opacity: 0;
-   transition: inherit;
-}
-
-input:focus::-webkit-input-placeholder {
-   opacity: 1;
-}
-
-input:not(:placeholder-shown) + label, input:focus + label {
-   transform: translate(0, 0) scale(1);
-   cursor: pointer;
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 12px;
 }

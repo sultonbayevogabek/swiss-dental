@@ -619,6 +619,25 @@
       width: 100%;
       margin-bottom: 30px;
    }
+
+   .login-section {
+      width: 93%;
+      padding: 30px;
+      margin: 0 auto;
+   }
+
+   .login-form__field input {
+      width: 100%;
+   }
+
+   .register-forgot {
+      font-size: 0;
+
+      a {
+         font-size: 20px;
+         display: block;
+      }
+   }
 }
 
 @include media(500px) {
