@@ -186,6 +186,26 @@
    .tabs__card__header img {
       width: 100%;
    }
+
+   .article {
+      width: 100%;
+   }
+
+   .treatment-types__card {
+      width: 49%;
+   }
+
+   .article__treatment {
+      padding-bottom: 30px;
+   }
+
+   .article__description__gallery figure {
+      width: 48%;
+
+      img {
+         width: 100%;
+      }
+   }
 }
 
 @include media(1245px) {
@@ -581,6 +601,15 @@
 
    .video-modal button {
       font-size: 30px;
+   }
+
+   .treatment-types__card {
+      width: 100%;
+   }
+
+   .article__description__gallery figure {
+      width: 100%;
+      margin-bottom: 30px;
    }
 }
 

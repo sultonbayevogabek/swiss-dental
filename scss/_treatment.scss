@@ -79,6 +79,7 @@
 .article__description__gallery {
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
    margin-bottom: 52px;
 
    figure {

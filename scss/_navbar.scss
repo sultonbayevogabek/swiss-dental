@@ -18,8 +18,9 @@
       margin-right: 50px;
    }
 
-   &:last-child {
+   &:nth-child(5) {
       margin-left: auto;
+      margin-right: 0;
    }
 }
 
