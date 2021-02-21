@@ -200,7 +200,6 @@ img {
 .select-items div, .select-selected {
   padding: 8px;
   cursor: pointer;
-  text-transform: capitalize;
 }
 
 .select-items {
@@ -1770,6 +1769,80 @@ img {
   font-weight: 400;
   line-height: 21px;
   opacity: 0.6;
+}
+
+.appointment {
+  height: 490px;
+  width: 340px;
+  padding-top: 31px;
+  padding-left: 26px;
+  padding-right: 27px;
+  background-color: #E5F7F8;
+}
+.appointment h2 {
+  margin-bottom: 35px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
+
+.appointment__form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(86, 83, 163, 0.2);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #29295F;
+}
+.appointment__form input::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #29295F;
+}
+.appointment__form .custom-select {
+  width: 100%;
+  margin-bottom: 70px;
+  padding: 18px 0 !important;
+  border-bottom: 1px solid rgba(86, 83, 163, 0.2);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: none;
+}
+.appointment__form .select-selected {
+  padding: 0 !important;
+}
+.appointment__form .select-selected::after {
+  top: 21px;
+}
+.appointment__form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 56px;
+  margin: 0 auto;
+  background-color: #00B1B9;
+  color: #FFFFFF;
+  border: none;
+}
+.appointment__form button:hover {
+  background-color: #00bbc3;
+}
+.appointment__form button img {
+  margin-right: 10px;
+}
+.appointment__form button span {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 @media only screen and (max-width: 1300px) {
