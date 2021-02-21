@@ -316,6 +316,23 @@
    }
 }
 
+@include media(1044px) {
+   .our-address__social__wrapper {
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+   }
+   .about-us__text {
+      flex-grow: 1;
+      margin-top: 20px;
+   }
+   .our-address__list {
+
+   }
+   .our-branch-address__list {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
 @include media(1010px) {
    .site-nav__ul {
       position: fixed;
@@ -492,6 +509,16 @@
    }
 }
 
+@include media(768px) {
+   .our-address__wrapper {
+      padding: 30px 20px;
+   }
+   .our-branch-address__list {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+   }
+}
+
 @include media(710px) {
    .our-doctors {
       height: auto;
@@ -640,6 +667,28 @@
    }
 }
 
+@include media(600px) {
+   .our-address__heading {
+      margin-bottom: 30px;
+   }
+   .our-address__list {
+      width: 100%;
+      & .our-address__item {
+         margin-bottom: 15px;
+         text-align: center;
+      }
+   }
+   .our-address__social__wrapper {
+      flex-direction: column;
+   }
+   .our-address__social__links {
+      grid-template-columns: repeat(4, 1fr);
+   }
+   .about-us__text {
+      width: 100%;
+   }
+}
+
 @include media(500px) {
    .slider .container {
       padding-top: 20px;
@@ -670,6 +719,20 @@
       width: 0;
       height: 0;
       margin: 5px;
+   }
+}
+
+@include media(425px) {
+   .our-branch-address__list {
+      padding-top: 20px;
+   }
+   .our-branch-address__list {
+      grid-gap: 25px;
+   }
+   .our-address__social__links {
+      width: 100%;
+      padding: 0;
+      grid-gap: 10px;
    }
 }
 
@@ -722,3 +785,10 @@
       font-size: 16px;
    }
 }
+
+
+
+
+
+
+
