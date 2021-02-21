@@ -2052,6 +2052,13 @@ img {
   .article__description__gallery figure img {
     width: 100%;
   }
+
+  .appointment {
+    width: 100%;
+  }
+  .appointment button {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1245px) {
   .site-options {

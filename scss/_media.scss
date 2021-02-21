@@ -206,6 +206,14 @@
          width: 100%;
       }
    }
+
+   .appointment {
+      width: 100%;
+
+      button {
+         width: 100%;
+      }
+   }
 }
 
 @include media(1245px) {
