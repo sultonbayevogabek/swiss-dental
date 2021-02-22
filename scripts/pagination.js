@@ -1,6 +1,6 @@
-function controlPagination(countCard, activePage, cradsArray) {
+function controlPagination(countCard, activePage, cardsArray) {
 
-   const totalPage = parseInt(cradsArray.length / countCard, 10) + 1;
+   const totalPage = parseInt(cardsArray.length / countCard, 10) + 1;
 
    if (totalPage !== 1)
       document.querySelector(".pagination").classList.add("show");
@@ -61,25 +61,25 @@ function controlPagination(countCard, activePage, cradsArray) {
             break;
          newCard += `<div class="tabs__card">
                      <div class="tabs__card__header">
-                        <img src="${cradsArray[i].imgHeader}${i}" alt="" width="280" height="190">
+                        <img src="${cardsArray[i].imgHeader}${i}" alt="" width="280" height="190">
                      </div>
                      <div class="tabs__card__body">
                         <time>
-                           <img src="${cradsArray[i].imgBody}" alt="clock icon">
-                           <span>${cradsArray[i].time}</span>
+                           <img src="img/icons/clock.svg" alt="clock icon">
+                           <span>${cardsArray[i].time}</span>
                         </time>
-                        <h3>${cradsArray[i].text}</h3>
+                        <h3>${cardsArray[i].text}</h3>
                      </div>
                      <div class="tabs__card__link">
                         <time>
-                           <img src="${cradsArray[i].imgBody}" alt="clock icon">
-                           <span>${cradsArray[i].text}</span>
+                           <img src="img/icons/clock.svg" alt="clock icon">
+                           <span>${cardsArray[i].time}</span>
                         </time>
                         <h3>
-                           <a href="#">${cradsArray[i].text}</a>
+                           <a href="#">${cardsArray[i].text}</a>
                         </h3>
                         <p>
-                           <a href="#">${cradsArray[i].text}</a>
+                           <a href="#">${cardsArray[i].text}</a>
                         </p>
                      </div>
                   </div>`;
