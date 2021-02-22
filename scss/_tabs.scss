@@ -111,11 +111,83 @@
    margin-bottom: 20px;
 }
 
+// men o'zgratirganlar pagination uchun
+
 .tabs__news {
    width: 970px;
+}
+
+.tab__card__wrapper {
    display: flex;
    flex-wrap: wrap;
+   margin-bottom: 55px;
 }
+
+.tabs__news .show {
+   display: block;
+}
+.pagination {
+   display: none;
+   margin-bottom: 370px;
+   text-align: left;
+}
+.pagination__list {
+   display: inline-flex;
+   align-items: center;
+   & li {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      align-items: center;
+      width: 46px;
+      height: 46px;
+      cursor: pointer;
+   }
+   & .num,& .dots {
+      margin: 0 5px;
+      border: 1px solid #00B1B9;
+      color: #00B1B9;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 20px;
+   }
+   & .pagination__btn {
+      width: 56px;
+      height: 56px;
+      margin: 0 15px;
+      background-color: #00B1B9;
+   }
+}
+.pagination__btn span {
+   width: 21px;
+   height: 42px;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 100% 100%;
+}
+.pagination__btn  {
+   &.prev {
+      margin-left: 0;
+
+      span {
+         background: url("../img/icons/prevwhite.svg");
+         background-repeat: no-repeat;
+         background-position: center center;
+      }
+   }
+   &.next span {
+      background: url("../img/icons/nextwhite.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+   }
+}
+.pagination__list .active {
+   background: #00B1B9;
+   color: white;
+}
+
+// tugadi
 
 .tabs__card {
    position: relative;
@@ -166,7 +238,6 @@
    }
 
    h3 {
-      padding-bottom: auto;
       font-weight: 400;
       font-size: 20px;
       line-height: 25px;

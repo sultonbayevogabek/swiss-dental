@@ -1551,8 +1551,78 @@ img {
 
 .tabs__news {
   width: 970px;
+}
+
+.tab__card__wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+
+.tabs__news .show {
+  display: block;
+}
+
+.pagination {
+  display: none;
+  margin-bottom: 370px;
+  text-align: left;
+}
+
+.pagination__list {
+  display: inline-flex;
+  align-items: center;
+}
+.pagination__list li {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+}
+.pagination__list .num, .pagination__list .dots {
+  margin: 0 5px;
+  border: 1px solid #00B1B9;
+  color: #00B1B9;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+}
+.pagination__list .pagination__btn {
+  width: 56px;
+  height: 56px;
+  margin: 0 15px;
+  background-color: #00B1B9;
+}
+
+.pagination__btn span {
+  width: 21px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.pagination__btn.prev {
+  margin-left: 0;
+}
+.pagination__btn.prev span {
+  background: url("../img/icons/prevwhite.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.pagination__btn.next span {
+  background: url("../img/icons/nextwhite.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pagination__list .active {
+  background: #00B1B9;
+  color: white;
 }
 
 .tabs__card {
@@ -1599,7 +1669,6 @@ img {
   margin-right: 7px;
 }
 .tabs__card__body h3 {
-  padding-bottom: auto;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
@@ -2060,6 +2129,20 @@ label, input {
   width: 100%;
   height: 514px;
   border: 1px solid #00B1B9;
+}
+
+.make-appointment .container {
+  max-width: 1309px;
+  padding-top: 48px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #E5F7F8;
+}
+.make-appointment h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -2688,6 +2771,10 @@ label, input {
   .register-forgot a {
     font-size: 20px;
     display: block;
+  }
+
+  .map__wrapper {
+    height: 300px;
   }
 }
 @media only screen and (max-width: 600px) {

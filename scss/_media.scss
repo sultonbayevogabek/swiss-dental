@@ -665,6 +665,9 @@
          display: block;
       }
    }
+   .map__wrapper {
+      height: 300px;
+   }
 }
 
 @include media(600px) {
