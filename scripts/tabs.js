@@ -39,10 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
             showTabContent(index);
             localStorage.setItem('selectedTabIndex', index)
 
-            if (index !== 0) {
-               document.querySelector('.feedback').style.display = 'none';
-            } else {
-               document.querySelector('.feedback').style.display = 'block';
+            if (document.querySelector('.feedback')) {
+               if (index !== 0) {
+                  document.querySelector('.feedback').style.display = 'none';
+               } else {
+                  document.querySelector('.feedback').style.display = 'block';
+               }
             }
          }
       })

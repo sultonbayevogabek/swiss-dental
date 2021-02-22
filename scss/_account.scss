@@ -1,0 +1,163 @@
+.tabs__appointments {
+   width: 784px;
+}
+
+.tabs__appointments__card {
+   margin-bottom: 20px;
+   padding: 22px 40px 33px;
+   background-color: rgba($MAIN-LIGHT-BLUE, 0.1);
+}
+
+.tabs__appointments__card__header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 17px;
+
+   h3 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+   }
+}
+
+.tabs__appointments__card__date {
+   display: flex;
+   align-items: center;
+
+   > img {
+      margin-right: 23px;
+   }
+
+   time {
+      display: flex;
+      align-items: center;
+      margin-right: 14px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+
+      img {
+         margin-right: 7px;
+      }
+   }
+
+   div:last-child {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+
+      img {
+         margin-right: 7px;
+      }
+   }
+}
+
+.tabs__appointments__card__main {
+   margin-bottom: 37px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+}
+
+.tabs__appointments__card__footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   button {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+   }
+}
+
+.pay-online {
+   color: $MAIN-LIGHT-BLUE;
+}
+
+.cancel-appointment {
+   color: rgba($MAIN-DARK-BLUE, 0.4);
+}
+
+.tabs__payment {
+   width: 784px;
+}
+
+.tabs__payment__card {
+   position: relative;
+   margin-bottom: 20px;
+   padding: 28px 23px 45px 40px;
+   background-color: rgba($MAIN-LIGHT-BLUE, 0.1);
+}
+
+.tabs__payment__card__status {
+   display: flex;
+   align-items: flex-start;
+   margin-bottom: 22px;
+
+   p {
+      margin-right: 90px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+   }
+}
+
+.payment-status {
+   width: 139px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 6px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16px;
+   color: #FFFFFF;
+}
+
+.paid {
+   background-color: $MAIN-LIGHT-BLUE;
+}
+
+.expectation {
+   background-color: #FFA7A7;;
+}
+
+.tabs__payment__card__amount {
+   display: flex;
+   align-items: center;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 22px;
+}
+
+.treatment-name {
+   margin-right: 60px;
+}
+
+.treatment-cost small {
+   font-size: 16px;
+   letter-spacing: 0.5px;
+}
+
+.download-check {
+   position: absolute;
+   bottom: 26px;
+   right: 38px;
+   padding: 0;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   color: $MAIN-DARK-BLUE;
+}
