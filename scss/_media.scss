@@ -163,8 +163,29 @@
       justify-content: space-evenly;
    }
 
+   .tabs__card__wrapper {
+      justify-content: space-between;
+   }
+
    .tabs__card {
       margin: 0 0 30px 0;
+   }
+
+   .tabs__appointments {
+      width: 100%;
+   }
+
+   .tabs__payment {
+      width: 100%;
+   }
+
+   .tabs__payment__card {
+      padding: 20px 20px 40px;
+   }
+
+   .download-check {
+      right: 12px;
+      bottom: 12px;
    }
 }
 
@@ -440,6 +461,13 @@
    .doctor-info__tel div:last-child {
       font-size: 14px;
    }
+   .tabs__appointments__card__header h3 {
+      width: 100%;
+      margin-bottom: 10px;
+   }
+   .tabs__appointments__card__date {
+      width: 100%;
+   }
 }
 
 @include media(830px) {
@@ -562,7 +590,7 @@
 
    .video-wrapper {
       width: 100%;
-      margin-bottom: 30px!important;
+      margin-bottom: 30px !important;
    }
 
    .video-wrapper__video button {
@@ -665,8 +693,27 @@
          display: block;
       }
    }
+
    .map__wrapper {
       height: 300px;
+   }
+
+   .pagination {
+      text-align: center;
+   }
+
+   .pagination {
+      li {
+         width: 30px;
+         height: 30px;
+         font-size: 12px !important;
+      }
+
+      .pagination__btn {
+         width: 30px;
+         height: 30px;
+         margin: 0 5px;
+      }
    }
 }
 
@@ -676,6 +723,7 @@
    }
    .our-address__list {
       width: 100%;
+
       & .our-address__item {
          margin-bottom: 15px;
          text-align: center;
@@ -722,6 +770,34 @@
       width: 0;
       height: 0;
       margin: 5px;
+   }
+
+   .tabs__appointments__card {
+      padding: 20px;
+   }
+
+   .tabs__appointments__card__date {
+      span {
+         font-size: 14px;
+      }
+
+      img {
+         width: 12px;
+      }
+   }
+
+   .tabs__payment__card__status p {
+      width: 90%;
+      margin-right: 10px;
+      font-size: 14px;
+   }
+
+   .payment-status {
+      font-size: 14px;
+   }
+
+   .tabs__payment__card__amount div {
+      font-size: 14px;
    }
 }
 
@@ -772,6 +848,7 @@
          font-size: 16px;
       }
    }
+
    .tabs__about__card {
       span {
          font-size: 16px;
@@ -780,6 +857,12 @@
       img {
          width: 40px;
       }
+   }
+
+   .tabs__appointments__card__footer button {
+      width: 100%;
+      margin-bottom: 10px;
+      text-align: left;
    }
 }
 

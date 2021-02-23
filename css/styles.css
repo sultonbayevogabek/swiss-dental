@@ -104,6 +104,10 @@ img {
   display: none !important;
 }
 
+input[type=file] {
+  display: none;
+}
+
 .site-header {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -1553,7 +1557,7 @@ img {
   width: 970px;
 }
 
-.tab__card__wrapper {
+.tabs__card__wrapper {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 55px;
@@ -2159,6 +2163,7 @@ label, input {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 17px;
 }
 .tabs__appointments__card__header h3 {
@@ -2207,6 +2212,7 @@ label, input {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .tabs__appointments__card__footer button {
   padding: 0;
@@ -2282,6 +2288,10 @@ label, input {
   margin-right: 60px;
 }
 
+.treatment-cost span {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
 .treatment-cost small {
   font-size: 16px;
   letter-spacing: 0.5px;
@@ -2299,6 +2309,157 @@ label, input {
   font-size: 16px;
   line-height: 130%;
   color: #29295F;
+}
+
+.tabs__settings {
+  width: 1000px;
+  padding: 48px 54px 80px;
+  background-color: #E5F7F8;
+}
+
+.tabs__settings__header {
+  margin-bottom: 40px;
+}
+.tabs__settings__header h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
+.tabs__settings__header p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.account-avatar {
+  width: 94px;
+  height: 94px;
+  margin-right: 14px;
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+}
+.account-avatar img {
+  width: 86px;
+  height: 86px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.account-data h3 {
+  margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.account-registration-date {
+  margin-bottom: 12px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(41, 41, 95, 0.5);
+}
+
+.change-account-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97px;
+  height: 30px;
+  background: linear-gradient(287.75deg, #29295F -5.01%, #00B1B9 95.66%);
+  cursor: pointer;
+  transition: 0.5s all linear;
+}
+.change-account-avatar:hover {
+  background: linear-gradient(287.75deg, #00B1B9 -5.01%, #29295F 95.66%);
+}
+.change-account-avatar img {
+  margin-right: 5px;
+}
+.change-account-avatar span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+
+.settings-form {
+  margin-bottom: 57px;
+}
+
+.settings-form__field {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 27px;
+}
+.settings-form__field:nth-child(2) {
+  margin-bottom: 61px;
+}
+
+.settings-form__field__label span {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+.settings-form__field__label input {
+  width: 287px;
+  padding: 15px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(86, 83, 163, 0.2);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #29295F;
+}
+
+.tabs__settings__status {
+  width: 710px;
+  margin-bottom: 95px;
+  padding: 22px 35px;
+  background: rgba(0, 177, 185, 0.1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.tabs__settings__saving {
+  display: flex;
+  align-items: center;
+}
+.tabs__settings__saving button {
+  width: 230px;
+  height: 56px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs__settings__save {
+  background-color: #00B1B9;
+  color: #FFFFFF;
+}
+.tabs__settings__save:hover {
+  background-color: #00bbc3;
+}
+
+.tabs__settings__cancel {
+  background-color: transparent;
+  color: rgba(41, 41, 95, 0.4);
 }
 
 @media only screen and (max-width: 1300px) {
@@ -2459,8 +2620,29 @@ label, input {
     justify-content: space-evenly;
   }
 
+  .tabs__card__wrapper {
+    justify-content: space-between;
+  }
+
   .tabs__card {
     margin: 0 0 30px 0;
+  }
+
+  .tabs__appointments {
+    width: 100%;
+  }
+
+  .tabs__payment {
+    width: 100%;
+  }
+
+  .tabs__payment__card {
+    padding: 20px 20px 40px;
+  }
+
+  .download-check {
+    right: 12px;
+    bottom: 12px;
   }
 }
 @media only screen and (max-width: 1270px) {
@@ -2722,6 +2904,15 @@ label, input {
   .doctor-info__tel div:last-child {
     font-size: 14px;
   }
+
+  .tabs__appointments__card__header h3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .tabs__appointments__card__date {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 830px) {
   .tabs__about__card {
@@ -2932,6 +3123,21 @@ label, input {
   .map__wrapper {
     height: 300px;
   }
+
+  .pagination {
+    text-align: center;
+  }
+
+  .pagination li {
+    width: 30px;
+    height: 30px;
+    font-size: 12px !important;
+  }
+  .pagination .pagination__btn {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .our-address__heading {
@@ -2989,6 +3195,31 @@ label, input {
     height: 0;
     margin: 5px;
   }
+
+  .tabs__appointments__card {
+    padding: 20px;
+  }
+
+  .tabs__appointments__card__date span {
+    font-size: 14px;
+  }
+  .tabs__appointments__card__date img {
+    width: 12px;
+  }
+
+  .tabs__payment__card__status p {
+    width: 90%;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .payment-status {
+    font-size: 14px;
+  }
+
+  .tabs__payment__card__amount div {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 425px) {
   .our-branch-address__list {
@@ -3039,6 +3270,12 @@ label, input {
   }
   .tabs__about__card img {
     width: 40px;
+  }
+
+  .tabs__appointments__card__footer button {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
   }
 }
 @media only screen and (max-width: 355px) {

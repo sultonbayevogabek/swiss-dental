@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
    const tabsMenuListItems = document.querySelectorAll('.tabs__menu__li'),
       tabsContentItems = document.querySelectorAll('.tabs__content__item'),
-      tabsMenuList = document.querySelector('.tabs__menu__ul'),
-      tabsContent = document.querySelector('.tabs__content');
+      tabsMenuList = document.querySelector('.tabs__menu__ul');
 
    let selectedTabIndex;
 

@@ -120,7 +120,7 @@
                </main>
                <footer class="tabs__appointments__card__footer">
                   <button class="pay-online">
-                     Оплатить Онлайн
+                     Оплатить онлайн
                   </button>
                   <button class="cancel-appointment">
                      Отменить запись
@@ -148,7 +148,7 @@
                </main>
                <footer class="tabs__appointments__card__footer">
                   <button class="pay-online">
-                     Оплатить Онлайн
+                     Оплатить онлайн
                   </button>
                   <button class="cancel-appointment">
                      Отменить запись
@@ -175,7 +175,7 @@
                </main>
                <footer class="tabs__appointments__card__footer">
                   <button class="pay-online">
-                     Оплатить Онлайн
+                     Оплатить онлайн
                   </button>
                   <button class="cancel-appointment">
                      Отменить запись
@@ -216,7 +216,70 @@
             </div>
          </section>
          <section class="tabs__content__item tabs__settings">
-
+            <header class="tabs__settings__header">
+               <h2>Настройка аккаунта</h2>
+               <p>Проста нажав на поле вы можете изменить ваше данные! Не забудие Сохранить</p>
+            </header>
+            <main class="tabs__settings__main">
+               <div class="account-info">
+                  <div class="account-avatar">
+                     <img src="https://i.pravatar.cc/86?img=1" width="86" height="86" alt="Account image"/>
+                  </div>
+                  <div class="account-data">
+                     <h3>Лолита Бердиева</h3>
+                     <div class="account-registration-date">
+                        <span>Регистрирован в:</span>
+                        <span>12 Февраль, 2021</span>
+                     </div>
+                     <label class="change-account-avatar" for="change-avatar">
+                        <img src="img/icons/changeavatar.svg" alt="change avatar icon">
+                        <span>изменить</span>
+                        <input id="change-avatar" type="file">
+                     </label>
+                  </div>
+               </div>
+               <form class="settings-form" action="#" method="get">
+                  <div class="settings-form__field">
+                     <label class="settings-form__field__label" for="full_name">
+                        <span>Имя Фамилия</span>
+                        <input id="full_name" type="text" name="full_name" value="Лолита Бердиева">
+                     </label>
+                     <label class="settings-form__field__label" for="phone_number">
+                        <span>Телефон номер</span>
+                        <input class="masked-phone" id="phone_number" type="tel" name="phone_number"
+                               data-phonemask="+998 ( 9 9 )  9 6 3  9 7  7 3"/>
+                     </label>
+                  </div>
+                  <div class="settings-form__field">
+                     <label class="settings-form__field__label" for="full_name">
+                        <span>E-mail</span>
+                        <input id="email" type="email" name="email" value="info@gmail.com">
+                     </label>
+                  </div>
+                  <div class="settings-form__field">
+                     <label class="settings-form__field__label" for="full_name">
+                        <span>Логин</span>
+                        <input id="login" type="text" name="login" value="Illumination">
+                     </label>
+                     <label class="settings-form__field__label" for="full_name">
+                        <span>Пароль</span>
+                        <input id="password" type="password" name="password" value="*********">
+                     </label>
+                  </div>
+               </form>
+               <div class="tabs__settings__status">
+                  Введенные вами логин и пароль, вероятно, будут отправлены на вашу электронную почту. Вы можете
+                  сохранить это!
+               </div>
+               <div class="tabs__settings__saving">
+                  <button class="tabs__settings__save">
+                     Сохранить
+                  </button>
+                  <button class="tabs__settings__cancel">
+                     Отменить
+                  </button>
+               </div>
+            </main>
          </section>
       </section>
    </div>
@@ -277,6 +340,7 @@
       <div>Сайт разработана в студи Pixer</div>
    </div>
 </footer>
+<script src="scripts/form.js"></script>
 <script src="scripts/main.js"></script>
 <script src="scripts/tabs.js"></script>
 </body>

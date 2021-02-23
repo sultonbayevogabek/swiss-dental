@@ -5,7 +5,7 @@ function controlPagination(countCard, activePage, cardsArray) {
    if (totalPage !== 1)
       document.querySelector(".pagination").classList.add("show");
    const elPaginationList = document.querySelector(".pagination__list");
-   const elTabCardWrapper = document.querySelector(".tab__card__wrapper");
+   const elTabCardWrapper = document.querySelector(".tabs__card__wrapper");
 
 
    let clickPageDatasetId = activePage;

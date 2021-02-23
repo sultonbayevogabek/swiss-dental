@@ -85,3 +85,7 @@ img {
 .hide {
    display: none!important;
 }
+
+input[type="file"] {
+   display: none;
+}
