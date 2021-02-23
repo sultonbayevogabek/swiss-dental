@@ -184,8 +184,13 @@
    }
 
    .download-check {
-      right: 12px;
+      left: 21px;
       bottom: 12px;
+   }
+
+   .tabs__settings {
+      width: 100%;
+      padding: 20px;
    }
 }
 
@@ -535,6 +540,10 @@
    .share span {
       font-size: 16px;
    }
+
+   .tabs__settings__status {
+      width: 100%;
+   }
 }
 
 @include media(768px) {
@@ -551,6 +560,7 @@
    .our-doctors {
       height: auto;
    }
+
    .our-doctors__main {
       display: flex;
       justify-content: space-between;
@@ -565,6 +575,15 @@
       height: 150px !important;
       margin-right: 20px;
       margin-bottom: 20px;
+   }
+
+   .settings-form__field__label {
+      width: 100%;
+      margin-bottom: 20px;
+
+      input {
+         width: 100%;
+      }
    }
 }
 
@@ -788,7 +807,7 @@
 
    .tabs__payment__card__status p {
       width: 90%;
-      margin-right: 10px;
+      margin-right: 20px;
       font-size: 14px;
    }
 
@@ -798,6 +817,22 @@
 
    .tabs__payment__card__amount div {
       font-size: 14px;
+   }
+
+   .treatment-name {
+      margin-right: 30px;
+   }
+
+   .download-check {
+      font-size: 14px;
+   }
+
+   .tabs__settings__saving {
+      flex-wrap: wrap;
+
+      button {
+         width: 100%;
+      }
    }
 }
 

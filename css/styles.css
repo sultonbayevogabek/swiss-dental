@@ -2641,8 +2641,13 @@ label, input {
   }
 
   .download-check {
-    right: 12px;
+    left: 21px;
     bottom: 12px;
+  }
+
+  .tabs__settings {
+    width: 100%;
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 1270px) {
@@ -2975,6 +2980,10 @@ label, input {
   .share span {
     font-size: 16px;
   }
+
+  .tabs__settings__status {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .our-address__wrapper {
@@ -3005,6 +3014,14 @@ label, input {
     height: 150px !important;
     margin-right: 20px;
     margin-bottom: 20px;
+  }
+
+  .settings-form__field__label {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .settings-form__field__label input {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -3209,7 +3226,7 @@ label, input {
 
   .tabs__payment__card__status p {
     width: 90%;
-    margin-right: 10px;
+    margin-right: 20px;
     font-size: 14px;
   }
 
@@ -3219,6 +3236,21 @@ label, input {
 
   .tabs__payment__card__amount div {
     font-size: 14px;
+  }
+
+  .treatment-name {
+    margin-right: 30px;
+  }
+
+  .download-check {
+    font-size: 14px;
+  }
+
+  .tabs__settings__saving {
+    flex-wrap: wrap;
+  }
+  .tabs__settings__saving button {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 425px) {
