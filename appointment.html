@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Записатся на приём</title>
    <link rel="icon" type="image/png" href="img/favicon/favicon.png">
@@ -41,6 +42,7 @@
       </div>
    </div>
 </header>
+
 <!--SITE NAVIGATION-->
 <nav class="site-nav">
    <div class="container">
@@ -78,15 +80,77 @@
       </ul>
    </div>
 </nav>
-<!--LOGIN FORM SECTION-->
+
+<!--MAKE APPOINTMENT SECTION-->
 <main class="make-appointment">
    <div class="container">
-      <h2>Вход в аккаунт</h2>
-      <span>Введите пожалуста ваше логин и пароль</span>
+      <h2>Хотите записатся на приём</h2>
+      <form class="make-appointment__form" action="#" method="get">
+         <fieldset>
+            <legend>Пожалуйста, заполните все поля</legend>
+            <label class="settings-form__field__label" for="full_name">
+               <span>Имя Фамилия</span>
+               <input id="full_name" type="text" name="full_name">
+            </label>
+            <label class="settings-form__field__label" for="phone_number">
+               <span>Телефон номер</span>
+               <input class="masked-phone" id="phone_number" type="tel" name="phone_number"
+                      data-phonemask="+998 ( _ _ )  _ _ _  _ _  _ _"/>
+            </label>
+            <div class="custom-select">
+               <select id="filial" name="filial">
+                  <option value="0">Выберите филиал</option>
+                  <option value="1">Юнсобоадиский филиал</option>
+                  <option value="2">Чиланзарский филиал</option>
+                  <option value="3">Мирабадский филиал</option>
+                  <option value="4">Яшнабадский филиал</option>
+               </select>
+            </div>
+         </fieldset>
+         <fieldset>
+            <legend>Отметьте одну или несколько наших услуг!</legend>
+            <div class="service__labels">
+               <label class="service__label" for="treatment">
+                  <input id="treatment" type="checkbox">
+                  <span></span>
+                  <span>Лечение</span>
+               </label>
+               <label class="service__label" for="orthopedics">
+                  <input id="orthopedics" type="checkbox">
+                  <span></span>
+                  <span>Ортопедия</span>
+               </label>
+               <label class="service__label" for="therapeutic">
+                  <input id="therapeutic" type="checkbox">
+                  <span></span>
+                  <span>Терапевтическая</span>
+               </label>
+               <label class="service__label" for="implantation">
+                  <input id="implantation" type="checkbox">
+                  <span></span>
+                  <span>Имплонтация</span>
+               </label>
+               <label class="service__label" for="orthodontics">
+                  <input id="orthodontics" type="checkbox">
+                  <span></span>
+                  <span>Ортодонтия</span>
+               </label>
+               <label class="service__label" for="children">
+                  <input id="children" type="checkbox">
+                  <span></span>
+                  <span>Детская</span>
+               </label>
+               <label class="service__label" for="cosmetic">
+                  <input id="cosmetic" type="checkbox">
+                  <span></span>
+                  <span>Косметическая</span>
+               </label>
+            </div>
+         </fieldset>
+      </form>
    </div>
 </main>
-<!--SLIDER SECTION-->
-<h1>Bu shunchaki sarlavha</h1>
+
 <!--SITE FOOTER-->
 <footer class="site-footer">
    <div class="container">
@@ -143,6 +207,9 @@
       <div>Сайт разработана в студи Pixer</div>
    </div>
 </footer>
+
+<!--JAVASCRIPT FILES-->
+<script src="scripts/form.js"></script>
 <script src="scripts/main.js"></script>
 </body>
 </html>

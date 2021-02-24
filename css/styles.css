@@ -104,7 +104,7 @@ img {
   display: none !important;
 }
 
-input[type=file] {
+input[type=file], input[type=checkbox] {
   display: none;
 }
 
@@ -2143,10 +2143,83 @@ label, input {
   background-color: #E5F7F8;
 }
 .make-appointment h2 {
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 28px;
   line-height: 30px;
   letter-spacing: 0.02em;
+}
+
+.make-appointment__form .custom-select {
+  width: 287px;
+  margin-right: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(86, 83, 163, 0.2);
+}
+.make-appointment__form .select-selected:after {
+  top: 30px;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+fieldset:first-child {
+  margin-bottom: 69px;
+}
+
+legend {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.service__labels {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service__label {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  height: 70px;
+  margin-bottom: 27px;
+  padding-left: 20px;
+  background-color: #FFFFFF;
+  user-select: none;
+}
+.service__label:not(:nth-child(4)) {
+  margin-right: 27px;
+}
+.service__label span:nth-child(2) {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-right: 20px;
+  background-color: rgba(0, 177, 185, 0.1);
+  border: 1px solid #00B1B9;
+  border-radius: 7px;
+}
+.service__label span:last-child {
+  padding-left: 20px;
+  border-left: 1px solid rgba(41, 41, 95, 0.2);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+.service__label input:checked + span:nth-child(2) {
+  background-image: url("../img/icons/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px 28px;
+  border-color: transparent !important;
 }
 
 .tabs__appointments {
