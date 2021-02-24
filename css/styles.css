@@ -2136,7 +2136,7 @@ label, input {
 }
 
 .make-appointment .container {
-  max-width: 1309px;
+  max-width: 1279px;
   padding-top: 48px;
   padding-left: 80px;
   padding-right: 80px;
@@ -2535,6 +2535,48 @@ legend {
   color: rgba(41, 41, 95, 0.4);
 }
 
+.registration-section {
+  padding: 0 15px;
+}
+.registration-section .container {
+  max-width: 1279px;
+  background-color: #E5F7F8;
+  padding: 48px 78px 78px 74px;
+}
+.registration-section h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
+
+.registration-section__form fieldset {
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+.registration-section__form legend {
+  margin-bottom: 40px;
+}
+.registration-section__form label {
+  margin-bottom: 62px;
+}
+.registration-section__form label:not(:nth-child(4)) {
+  margin-right: 130px;
+}
+.registration-section__form input::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #29295F;
+}
+
+@media only screen and (max-width: 1305px) {
+  .registration-section .container {
+    padding: 20px;
+  }
+}
 @media only screen and (max-width: 1300px) {
   .slider .container {
     background-size: 30%;
@@ -2785,6 +2827,18 @@ legend {
   .prefers__card {
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .registration-section .settings-form__field__label {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+  .registration-section input {
+    width: 100%;
+  }
+  .registration-section .tabs__settings__status {
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 1160px) {

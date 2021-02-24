@@ -1,4 +1,11 @@
 // ============== MEDIA QUERIES ================== //
+@include media(1305px) {
+   .registration-section {
+      .container {
+         padding: 20px;
+      }
+   }
+}
 @include media(1300px) {
    .slider .container {
       background-size: 30%;
@@ -260,6 +267,23 @@
    .prefers__card {
       width: 100%;
       margin-bottom: 20px;
+   }
+}
+
+@include media(1200px) {
+   .registration-section {
+      .settings-form__field__label {
+         width: 100%;
+         margin-right: 0!important;
+      }
+
+      input {
+         width: 100%;
+      }
+
+      .tabs__settings__status {
+         padding: 20px;
+      }
    }
 }
 

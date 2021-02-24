@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Вход в аккаунт</title>
+   <title>Регистрация</title>
    <link rel="icon" type="image/png" href="img/favicon/favicon.png">
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/styles.css">
@@ -23,7 +24,7 @@
          </button>
          <div class="custom-select">
             <img src="img/icons/globus.svg" alt="globus icon">
-            <select name="page-language">
+            <select>
                <option value="0">Русский</option>
                <option value="1">Aнглийский</option>
                <option value="2">Узбекский</option>
@@ -80,32 +81,47 @@
    </div>
 </nav>
 
-<!--LOGIN FORM SECTION-->
-<main class="login-section">
-   <h2>Вход в аккаунт</h2>
-   <span>Введите пожалуста ваше логин и пароль</span>
-   <form class="login-form" action="#" method="get">
-      <div class="login-form__field mb-20">
-         <input type="text" name="login" id="login" placeholder=" ">
-         <label for="login">Логин</label>
-      </div>
-      <div class="login-form__field mb-70">
-         <input type="password" name="password" id="password" placeholder=" ">
-         <label for="password">Пароль</label>
-      </div>
-      <button class="login-form__submit">
-         <img src="img/icons/login.svg" alt="">
-         <span>Вход</span>
-      </button>
-
-      <div class="register-forgot">
-         <a href="#">Забыли пароль?</a> /
-         <a href="register.html">Регистрация</a>
-      </div>
-   </form>
+<!--MAKE APPOINTMENT SECTION-->
+<main class="registration-section">
+   <div class="container">
+      <h2>Регистрация</h2>
+      <form class="registration-section__form" action="">
+         <fieldset>
+            <legend>Пожалуйста, заполните все поля</legend>
+            <label class="settings-form__field__label" for="full_name">
+               <span>Имя Фамилия</span>
+               <input id="full_name" type="text" name="full_name">
+            </label>
+            <label class="settings-form__field__label" for="phone_number">
+               <span>Телефон номер</span>
+               <input class="masked-phone" id="phone_number" type="tel" name="phone_number"
+                      data-phonemask="+998 ( _ _ )  _ _ _  _ _  _ _"/>
+            </label>
+            <label class="settings-form__field__label" for="email">
+               <span>E-mail</span>
+               <input id="email" type="email" name="email" placeholder=" ">
+            </label>
+            <label class="settings-form__field__label" for="login">
+               <span>Придумайти логин</span>
+               <input id="login" type="text" name="login">
+            </label>
+            <label class="settings-form__field__label" for="password">
+               <span>Придумайти логин</span>
+               <input id="password" type="password" name="password">
+            </label>
+         </fieldset>
+         <div class="tabs__settings__status">
+            Введенные вами логин и пароль, вероятно, будут отправлены на вашу электронную почту. Вы можете
+            сохранить это!
+         </div>
+         <div class="tabs__settings__saving">
+            <button class="tabs__settings__save">
+               Регистрация
+            </button>
+         </div>
+      </form>
+   </div>
 </main>
-
-<h1>Bu shunchaki sarlavha</h1>
 
 <!--SITE FOOTER-->
 <footer class="site-footer">
@@ -165,6 +181,7 @@
 </footer>
 
 <!--JAVASCRIPT FILES-->
+<script src="scripts/form.js"></script>
 <script src="scripts/main.js"></script>
 </body>
 </html>
