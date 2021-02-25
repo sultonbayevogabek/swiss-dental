@@ -33,6 +33,7 @@
 
    input {
       width: 100%;
+      margin-bottom: 30px;
       border: none;
       background: transparent;
       border-bottom: 1px solid rgba(86, 83, 163, 0.2);
@@ -44,10 +45,6 @@
 
       &::placeholder {
          color: $MAIN-DARK-BLUE;
-      }
-
-      &:first-child {
-         margin-bottom: 30px;
       }
    }
 
@@ -70,7 +67,7 @@
 .sign__form__fields {
    padding-left: 40px;
    padding-right: 40px;
-   margin-bottom: 65px;
+   margin-bottom: 35px;
 }
 
 .our-doctors {

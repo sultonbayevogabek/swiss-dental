@@ -64,5 +64,5 @@ class PhoneField {
 document.addEventListener('DOMContentLoaded', function () {
    'use strict';
    let a = document.getElementsByClassName('masked-phone'), b = [];
-   for (let c = 0; c < a.length; c++) b.push(new PhoneField(a[c], a[c].dataset.phonemask, a[c].dataset.placeholder))
+   for (let c = 0; c < a.length; c++) b.push(new PhoneField(a[c], a[c].dataset.phonemask, a[c].dataset.placeholder));
 });

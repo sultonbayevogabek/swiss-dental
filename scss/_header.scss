@@ -51,7 +51,7 @@
       margin-right: 10px;
    }
 
-   span {
+   p, > span {
       font-weight: 400;
       font-size: 20px;
       line-height: 20px;
@@ -66,4 +66,107 @@
       margin-right: 20px;
    }
 }
+.user__menu {
+   position: relative;
+   width: 260px;
+   padding: 0 10px 0 11px;
+   & .user__img__wrapper {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-right: 10px;
+   }
+   .icon__bottom {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url("../img/userMenu/chevron-down.svg");
+      background-size: 100% 100%;
+   }
+}
+.user__img__wrapper {
+   overflow: hidden;
+   & > img {
+      width: 100%;
+      height: 100%;
+   }
+}
+.modal__user {
+   display: none;
+   position: absolute;
+   width: 291px;
+   background-color: white;
+   cursor: default;
+   top: 70px;
+   right: 0;
+   z-index: 100;
+   box-shadow: 0px 70px 70px rgba(7, 79, 82, 0.3);
+}
+.show {
+   display: block;
+}
+.modal__content {
+   padding: 0;
+}
+.fade-in {
+   // animation: name duration timing-function delay iteration-count direction fill-mode;
+   animation: fadeIn 0.3s ease forwards;
+}
+.fade-out {
+   animation: fadeOut 0.3s ease forwards;
+}
+.modal__content a {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   margin-bottom: 11px;
+   padding: 27px 37px;
+   color: $MAIN-DARK-BLUE;
+   &:hover,
+   &:focus {
+      background-color: rgb(229, 247, 248);
+   }
+}
+.modal__content .setting__link {
+   margin-bottom: 59px;
+}
+.modal__content .exit__link {
+   margin-bottom: 0;
+}
+.line {
+   width: 100%;
+   height: 2px;
+   padding: 0 37px;
+   opacity: 0.1;
+   background-color: $MAIN-DARK-BLUE;
+   border-radius: 2px;
+}
 
+@keyframes fadeIn {
+   from {
+      transform: translateY(-16px);
+      opacity: 0;
+   }
+   to {
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
+@keyframes fadeOut {
+   from {
+      transform: translateY(0);
+      opacity: 1;
+   }
+   to {
+      transform: translateY(-16px);
+      opacity: 0;
+   }
+}
+
+@include media(963px) {
+   .modal__user {
+      width: 100%;
+   }
+}

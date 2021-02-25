@@ -108,6 +108,17 @@ input[type=file], input[type=checkbox] {
   display: none;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .site-header {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -157,7 +168,7 @@ input[type=file], input[type=checkbox] {
 .registration img {
   margin-right: 10px;
 }
-.registration span {
+.registration p, .registration > span {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -170,6 +181,116 @@ input[type=file], input[type=checkbox] {
   margin-right: 20px;
 }
 
+.user__menu {
+  position: relative;
+  width: 260px;
+  padding: 0 10px 0 11px;
+}
+.user__menu .user__img__wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-right: 10px;
+}
+.user__menu .icon__bottom {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/userMenu/chevron-down.svg");
+  background-size: 100% 100%;
+}
+
+.user__img__wrapper {
+  overflow: hidden;
+}
+.user__img__wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal__user {
+  display: none;
+  position: absolute;
+  width: 291px;
+  background-color: white;
+  cursor: default;
+  top: 70px;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0px 70px 70px rgba(7, 79, 82, 0.3);
+}
+
+.show {
+  display: block;
+}
+
+.modal__content {
+  padding: 0;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+.modal__content a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+  padding: 27px 37px;
+  color: #29295F;
+}
+.modal__content a:hover, .modal__content a:focus {
+  background-color: #e5f7f8;
+}
+
+.modal__content .setting__link {
+  margin-bottom: 59px;
+}
+
+.modal__content .exit__link {
+  margin-bottom: 0;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  padding: 0 37px;
+  opacity: 0.1;
+  background-color: #29295F;
+  border-radius: 2px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-16px);
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 963px) {
+  .modal__user {
+    width: 100%;
+  }
+}
 .custom-select {
   position: relative;
   display: flex;
@@ -895,6 +1016,7 @@ input[type=file], input[type=checkbox] {
 }
 .sign__form input {
   width: 100%;
+  margin-bottom: 30px;
   border: none;
   background: transparent;
   border-bottom: 1px solid rgba(86, 83, 163, 0.2);
@@ -906,9 +1028,6 @@ input[type=file], input[type=checkbox] {
 }
 .sign__form input::placeholder {
   color: #29295F;
-}
-.sign__form input:first-child {
-  margin-bottom: 30px;
 }
 .sign__form button {
   width: 100%;
@@ -927,7 +1046,7 @@ input[type=file], input[type=checkbox] {
 .sign__form__fields {
   padding-left: 40px;
   padding-right: 40px;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
 }
 
 .our-doctors {
@@ -2196,7 +2315,7 @@ legend {
   user-select: none;
 }
 .service__label:not(:nth-child(4)) {
-  margin-right: 27px;
+  margin-right: 25px;
 }
 .service__label span:nth-child(2) {
   display: block;

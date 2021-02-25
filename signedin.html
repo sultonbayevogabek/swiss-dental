@@ -1,14 +1,13 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
+
 <head>
    <meta charset="utf-8">
    <meta name="viewport"
          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Swiss Dental</title>
-   <link rel="icon"
-         type="image/png"
-         href="img/favicon/favicon.png">
+   <link rel="icon" type="image/png" href="img/favicon/favicon.png">
    <link rel="stylesheet" href="css/slick.css"/>
    <link rel="stylesheet" href="css/slick-theme.css"/>
    <link rel="stylesheet" href="css/normalize.css">
@@ -28,21 +27,46 @@
          </button>
          <div class="custom-select">
             <img src="img/icons/globus.svg" alt="globus icon">
-            <select name="page-language">
+            <select>
                <option value="0">Русский</option>
                <option value="1">Aнглийский</option>
                <option value="2">Узбекский</option>
                <option value="3">Русский</option>
             </select>
          </div>
-         <a class="registration" href="appointment.html">
+         <a class="registration" href="#">
             <img src="img/icons/bell.svg" alt="bell icons" width="24">
             <span>Записатся</span>
          </a>
-         <a class="registration" href="login.html">
-            <img src="img/icons/avatar.svg" alt="bell icons" width="14">
-            <span>Личний кабинет</span>
-         </a>
+         <div class="registration user__menu" href="login.html">
+            <div class="user__img__wrapper">
+               <img class="user__menu__img" src="" alt="bell icons">
+            </div>
+            <p class="user__menu__text">Лолита Бердиева</p>
+            <span class="icon__bottom"></span>
+
+            <div class="modal__user">
+               <div class="modal__content">
+                  <a href="#" class="my-information__link">
+                     <img src="./img/userMenu/book.svg" alt="">
+                     <span>Мои записи</span>
+                  </a>
+                  <a href="#" class="pay__link">
+                     <img src="./img/userMenu/credit-card.svg" alt="">
+                     <span>Оплата</span>
+                  </a>
+                  <a href="#" class="setting__link">
+                     <img src="./img/userMenu/settings.svg" alt="">
+                     <span>Настройка</span>
+                  </a>
+                  <div class="line"></div>
+                  <a href="#" class="exit__link">
+                     <img src="./img/userMenu/log-out.svg" alt="">
+                     <span>Выйти</span>
+                  </a>
+               </div>
+            </div>
+         </div>
       </div>
    </div>
 </header>
@@ -167,7 +191,8 @@
                <div class="slider__item">
                   <div class="description">
                      <h3>Идеальный день с зубной щеткой</h3>
-                     <p>Давно установлено, что читатель отвлекаться на удобочитаемое содержимое страницы при</p>
+                     <p>Давно установлено, что читатель отвлекаться на удобочитаемое содержимое страницы при
+                     </p>
                   </div>
                   <div class="item-img">
                      <img src="img/services/toothpaste.png" alt="">
@@ -187,7 +212,8 @@
                <div class="slider__item">
                   <div class="description">
                      <h3>Идеальный день с зубной щеткой</h3>
-                     <p>Давно установлено, что читатель отвлекаться на удобочитаемое содержимое страницы при</p>
+                     <p>Давно установлено, что читатель отвлекаться на удобочитаемое содержимое страницы при
+                     </p>
                   </div>
                   <div class="item-img">
                      <img src="img/services/toothpaste.png" alt="">
@@ -311,7 +337,6 @@
       </div>
    </main>
 </section>
-
 <!--SECTION ABOUT SAYS-->
 <section class="about-says">
    <div class="container">
@@ -357,7 +382,6 @@
       </section>
    </div>
 </section>
-
 <!--SECTION NEWS-->
 <section class="news">
    <div class="container">
@@ -551,7 +575,6 @@
       </div>
    </div>
 </section>
-
 <!--SECTION SIGN AND DOCTORS-->
 <div class="sign-doctors">
    <div class="container">
@@ -560,7 +583,7 @@
          <form class="sign__form">
             <div class="sign__form__fields">
                <input type="text" placeholder="Имя Фамилия" name="full_name">
-               <input type="number" placeholder="Номер телефона" name="phone_number">
+               <input type="text" placeholder="Номер телефона" name="phone_number">
             </div>
             <button type="submit">
                Записатся
@@ -578,7 +601,6 @@
       </section>
    </div>
 </div>
-
 <!--SECTION PREFERS-->
 <section class="prefers">
    <div class="container">
@@ -618,7 +640,6 @@
       </div>
    </div>
 </section>
-
 <!--SECTION GALLERY-->
 <section class="gallery">
    <div class="container">
@@ -668,7 +689,6 @@
       </section>
    </div>
 </section>
-
 <!--SECTION CAMPAIGN (AKSIYA 2021)-->
 <section class="campaign">
    <div class="container">
@@ -707,14 +727,13 @@
       </section>
    </div>
 </section>
-
 <!--SECTION FEEDBACK-->
 <div class="feedback">
    <div class="container">
       <section class="is-useful">
-         <span class="is-useful__question">
-            Была ли это страница полезна?
-         </span>
+                <span class="is-useful__question">
+                    Была ли это страница полезна?
+                </span>
          <div class="is-useful__buttons">
             <button>
                <img src="img/icons/liked.svg" alt="like icon">
@@ -725,16 +744,15 @@
          </div>
       </section>
       <section class="share">
-         <span>
-            Поделится
-         </span>
+                <span>
+                    Поделится
+                </span>
          <button>
             <img src="img/icons/share.svg" alt="share icon">
          </button>
       </section>
    </div>
 </div>
-
 <!--SITE FOOTER-->
 <footer class="site-footer">
    <div class="container">
@@ -791,11 +809,9 @@
       <div>Сайт разработана в студи Pixer</div>
    </div>
 </footer>
-
 <!--VIDEO MODAL-->
 <div class="video-modal hide"></div>
-
-<!--JAVASCRIPT FILES-->
+<script src="scripts/user-menu.js"></script>
 <script src="scripts/jquery.js"></script>
 <script src="scripts/slick.js"></script>
 <script src="scripts/main.js"></script>
@@ -803,4 +819,5 @@
 <script src="scripts/doctors.js"></script>
 <script src="scripts/video-play.js"></script>
 </body>
+
 </html>

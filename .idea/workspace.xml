@@ -20,9 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="SCSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -40,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/icons" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/swiss-dental-master" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="RecentsManager">
@@ -94,7 +94,8 @@
       <workItem from="1614096041305" duration="10779000" />
       <workItem from="1614143255788" duration="1907000" />
       <workItem from="1614145778464" duration="655000" />
-      <workItem from="1614146643314" duration="13884000" />
+      <workItem from="1614146643314" duration="15366000" />
+      <workItem from="1614222240917" duration="12410000" />
     </task>
     <servers />
   </component>
@@ -126,10 +127,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1614149032297" />
-    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1613971025172">
+    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1614237670097">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1613971025172" />
+    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614237670097" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1613983339432">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
