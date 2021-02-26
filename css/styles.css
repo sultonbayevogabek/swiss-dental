@@ -2385,7 +2385,7 @@ legend {
 .appointment-payment {
   display: flex;
   flex-wrap: wrap;
-  width: 1120px;
+  max-width: 1120px;
   margin-top: 18px;
   margin-bottom: 89px;
   padding: 48px 60px 57px;
@@ -2411,6 +2411,7 @@ legend {
 .appointment-payment__list__item {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 25px;
 }
 .appointment-payment__list__item span:first-child {
@@ -2469,6 +2470,7 @@ legend {
 .appointment-saving {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .appointment-saving button:first-child {
   display: flex;
@@ -3049,6 +3051,14 @@ legend {
     width: 100%;
     padding: 20px;
   }
+
+  .make-appointment {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .make-appointment .container {
+    padding: 20px;
+  }
 }
 @media only screen and (max-width: 1270px) {
   .campaign__section {
@@ -3126,6 +3136,16 @@ legend {
     padding: 20px;
   }
 }
+@media only screen and (max-width: 1187px) {
+  .service__labels {
+    justify-content: space-between;
+  }
+
+  .service__label {
+    width: 48%;
+    margin-right: 0 !important;
+  }
+}
 @media only screen and (max-width: 1160px) {
   .gallery__section {
     width: 100% !important;
@@ -3145,6 +3165,10 @@ legend {
 
   .gallery__section__header {
     margin-bottom: 30px;
+  }
+
+  .appointment-payment {
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 1090px) {
@@ -3201,6 +3225,16 @@ legend {
     width: 100%;
     height: auto;
   }
+
+  .appointment-payment__cost {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .appointment-payment__services {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1044px) {
   .our-address__social__wrapper {
@@ -3254,6 +3288,11 @@ legend {
 
   .nav-close {
     display: flex;
+  }
+
+  .service__includes__label {
+    margin-right: 15px;
+    margin-bottom: 15px;
   }
 }
 @media only screen and (max-width: 963px) {
@@ -3435,6 +3474,12 @@ legend {
   .settings-form__field__label input {
     width: 100%;
   }
+
+  .appointment-saving button {
+    width: 100%;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
 }
 @media only screen and (max-width: 650px) {
   .photos {
@@ -3468,6 +3513,11 @@ legend {
   .video-wrapper__video button img {
     width: 20px;
     height: 20px;
+  }
+
+  .service__label {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 @media only screen and (max-width: 629px) {
@@ -3664,6 +3714,10 @@ legend {
   .tabs__settings__saving button {
     width: 100%;
   }
+
+  .appointment-payment__list__item span {
+    width: 100% !important;
+  }
 }
 @media only screen and (max-width: 425px) {
   .our-branch-address__list {
@@ -3720,6 +3774,12 @@ legend {
     width: 100%;
     margin-bottom: 10px;
     text-align: left;
+  }
+
+  .appointment-payment__services__buttons button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }
 @media only screen and (max-width: 355px) {

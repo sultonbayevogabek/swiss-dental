@@ -63,6 +63,7 @@ legend {
    padding-left: 20px;
    background-color: #FFFFFF;
    user-select: none;
+
    &:not(:nth-child(4)) {
       margin-right: 25px;
    }
@@ -143,7 +144,7 @@ legend {
 .appointment-payment {
    display: flex;
    flex-wrap: wrap;
-   width: 1120px;
+   max-width: 1120px;
    margin-top: 18px;
    margin-bottom: 89px;
    padding: 48px 60px 57px;
@@ -170,6 +171,7 @@ legend {
 .appointment-payment__list__item {
    display: flex;
    align-items: flex-start;
+   flex-wrap: wrap;
    margin-bottom: 25px;
 
    span:first-child {
@@ -234,6 +236,7 @@ legend {
 .appointment-saving {
    display: flex;
    align-items: center;
+   flex-wrap: wrap;
 
    button:first-child {
       display: flex;

@@ -200,6 +200,15 @@
       width: 100%;
       padding: 20px;
    }
+
+   .make-appointment {
+      margin-right: 15px;
+      margin-left: 15px;
+
+      .container {
+         padding: 20px;
+      }
+   }
 }
 
 @include media(1270px) {
@@ -288,6 +297,17 @@
    }
 }
 
+@include media(1187px) {
+   .service__labels {
+      justify-content: space-between;
+   }
+
+   .service__label {
+      width: 48%;
+      margin-right: 0!important;
+   }
+}
+
 @include media(1160px) {
    .gallery__section {
       width: 100% !important;
@@ -309,12 +329,17 @@
    .gallery__section__header {
       margin-bottom: 30px;
    }
+
+   .appointment-payment {
+      padding: 20px;
+   }
 }
 
 @include media(1090px) {
    .services__list .row {
       margin-bottom: 0 !important;
    }
+
    .services__card {
       width: 100%;
       margin-bottom: 20px;
@@ -364,6 +389,15 @@
    .video-wrapper__video img {
       width: 100%;
       height: auto;
+   }
+
+   .appointment-payment__cost {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+   }
+   .appointment-payment__services {
+      width: 100%;
    }
 }
 
@@ -421,6 +455,11 @@
 
    .nav-close {
       display: flex;
+   }
+
+   .service__includes__label {
+      margin-right: 15px;
+      margin-bottom: 15px;
    }
 }
 
@@ -610,6 +649,12 @@
          width: 100%;
       }
    }
+
+   .appointment-saving button {
+      width: 100%;
+      padding-right: 10px!important;
+      padding-left: 10px!important;
+   }
 }
 
 @include media(650px) {
@@ -646,6 +691,11 @@
          width: 20px;
          height: 20px;
       }
+   }
+
+   .service__label {
+      width: 100%;
+      margin-bottom: 15px;
    }
 }
 
@@ -859,6 +909,10 @@
          width: 100%;
       }
    }
+
+   .appointment-payment__list__item span {
+      width: 100%!important;
+   }
 }
 
 @include media(425px) {
@@ -923,6 +977,12 @@
       width: 100%;
       margin-bottom: 10px;
       text-align: left;
+   }
+
+   .appointment-payment__services__buttons button {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
    }
 }
 
