@@ -284,7 +284,7 @@
    .registration-section {
       .settings-form__field__label {
          width: 100%;
-         margin-right: 0!important;
+         margin-right: 0 !important;
       }
 
       input {
@@ -304,7 +304,7 @@
 
    .service__label {
       width: 48%;
-      margin-right: 0!important;
+      margin-right: 0 !important;
    }
 }
 
@@ -652,8 +652,8 @@
 
    .appointment-saving button {
       width: 100%;
-      padding-right: 10px!important;
-      padding-left: 10px!important;
+      padding-right: 10px !important;
+      padding-left: 10px !important;
    }
 }
 
@@ -911,7 +911,12 @@
    }
 
    .appointment-payment__list__item span {
-      width: 100%!important;
+      width: 100% !important;
+   }
+
+   .tabs__settings__status {
+      padding: 20px;
+      margin-bottom: 30px;
    }
 }
 
@@ -983,6 +988,27 @@
       width: 100%;
       margin-right: 0;
       margin-bottom: 15px;
+   }
+
+   .account-avatar {
+      margin: 10px auto;
+   }
+
+   .account-data {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .change-account-avatar {
+      width: 100%;
+      margin-bottom: 10px;
+      order: -1;
+   }
+
+   .account-info {
+      margin-bottom: 30px;
    }
 }
 
