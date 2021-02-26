@@ -36,7 +36,7 @@ ul {
    list-style-type: none;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
    margin: 0;
 }
 
@@ -96,7 +96,6 @@ input[type="number"]::-webkit-inner-spin-button {
    margin: 0;
 }
 
-/* Firefox */
 input[type=number] {
    -moz-appearance: textfield;
 }

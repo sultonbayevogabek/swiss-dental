@@ -55,7 +55,7 @@ ul {
   list-style-type: none;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   margin: 0;
 }
 
@@ -114,7 +114,6 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -2256,9 +2255,7 @@ label, input {
 
 .make-appointment .container {
   max-width: 1279px;
-  padding-top: 48px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 48px 80px 85px;
   background-color: #E5F7F8;
 }
 .make-appointment h2 {
@@ -2302,6 +2299,7 @@ legend {
 .service__labels {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 35px;
 }
 
 .service__label {
@@ -2339,6 +2337,174 @@ legend {
   background-position: center;
   background-size: 28px 28px;
   border-color: transparent !important;
+}
+
+.service__includes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(41, 41, 95, 0.2);
+}
+.service__includes h4 {
+  width: 100%;
+  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.service__includes__label {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.service__includes__label span:nth-child(2) {
+  margin-right: 7px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  user-select: none;
+}
+.service__includes__label span:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  background-color: #00B1B9;
+  border-radius: 4px;
+  opacity: 0;
+}
+.service__includes__label input:checked ~ * {
+  color: #00B1B9;
+  opacity: 1;
+}
+
+.appointment-payment {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1120px;
+  margin-top: 18px;
+  margin-bottom: 89px;
+  padding: 48px 60px 57px;
+  background-color: rgba(0, 177, 185, 0.1);
+}
+
+.appointment-payment__cost {
+  width: 495px;
+  margin-right: 134px;
+}
+.appointment-payment__cost h3 {
+  margin-bottom: 38px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.appointment-payment__list {
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(41, 41, 95, 0.3);
+}
+
+.appointment-payment__list__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+.appointment-payment__list__item span:first-child {
+  width: 275px;
+  padding-right: 20px;
+  font-weight: 500 !important;
+  font-size: 16px;
+  line-height: 22px;
+}
+.appointment-payment__list__item span:last-child {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.appointment-payment__total-cost {
+  padding-top: 25px;
+}
+.appointment-payment__total-cost div:first-child {
+  margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.appointment-payment__total-cost div:last-child {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.appointment-payment__services {
+  width: 340px;
+}
+.appointment-payment__services h3 {
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.appointment-payment__services__buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.appointment-payment__services__buttons button {
+  width: 120px;
+  height: 70px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background: #FFFFFF;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.appointment-saving {
+  display: flex;
+  align-items: center;
+}
+.appointment-saving button:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 55px;
+  padding-right: 55px;
+  height: 56px;
+  background-color: #00B1B9;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.appointment-saving button:first-child:hover {
+  background-color: #00bbc3;
+}
+.appointment-saving button:first-child img {
+  margin-right: 10px;
+}
+.appointment-saving button:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding-left: 55px;
+  padding-right: 55px;
+  background-color: transparent;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #29295F;
+  cursor: pointer;
 }
 
 .tabs__appointments {
