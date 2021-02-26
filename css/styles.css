@@ -194,9 +194,9 @@ input[type=number] {
 }
 .user__menu .icon__bottom {
   display: block;
-  width: 24px;
-  height: 24px;
-  background: url("../img/userMenu/chevron-down.svg");
+  width: 18px;
+  height: 20px;
+  background: url("../img/icons/dropdownarrowwhite.svg");
   background-size: 100% 100%;
 }
 
@@ -217,7 +217,7 @@ input[type=number] {
   top: 70px;
   right: 0;
   z-index: 100;
-  box-shadow: 0px 70px 70px rgba(7, 79, 82, 0.3);
+  box-shadow: 0 70px 70px rgba(7, 79, 82, 0.3);
 }
 
 .show {
@@ -236,30 +236,31 @@ input[type=number] {
   animation: fadeOut 0.3s ease forwards;
 }
 
+.modal__content {
+  padding-top: 34px;
+}
 .modal__content a {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 11px;
-  padding: 27px 37px;
+  padding: 15px 0 15px 37px;
   color: #29295F;
 }
 .modal__content a:hover, .modal__content a:focus {
   background-color: #e5f7f8;
 }
-
 .modal__content .setting__link {
   margin-bottom: 59px;
 }
-
 .modal__content .exit__link {
-  margin-bottom: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
 }
 
 .line {
-  width: 100%;
+  width: 221px;
   height: 2px;
-  padding: 0 37px;
+  margin: 0 auto;
   opacity: 0.1;
   background-color: #29295F;
   border-radius: 2px;
@@ -283,11 +284,6 @@ input[type=number] {
   to {
     transform: translateY(-16px);
     opacity: 0;
-  }
-}
-@media only screen and (max-width: 963px) {
-  .modal__user {
-    width: 100%;
   }
 }
 .custom-select {
@@ -3339,6 +3335,10 @@ legend {
     width: 90%;
     height: 350px;
   }
+
+  .modal__user {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 900px) {
   .doctor-info {
@@ -3723,6 +3723,10 @@ legend {
   .tabs__settings__status {
     padding: 20px;
     margin-bottom: 30px;
+  }
+
+  .tabs__appointments__card__main {
+    text-align: justify;
   }
 }
 @media only screen and (max-width: 425px) {

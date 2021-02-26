@@ -40,19 +40,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/swiss-dental-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/icons" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\WEB ISHLANMALARIM\swiss-dental\img\services" />
-      <recent name="D:\WEB ISHLANMALARIM\swiss-dental\img\peoplesays" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WEB ISHLANMALARIM\swiss-dental\img\icons" />
       <recent name="D:\WEB ISHLANMALARIM\swiss-dental" />
       <recent name="D:\WEB ISHLANMALARIM\swiss-dental\img\appointment" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WEB ISHLANMALARIM\swiss-dental\img\services" />
+      <recent name="D:\WEB ISHLANMALARIM\swiss-dental\img\peoplesays" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -97,7 +97,7 @@
       <workItem from="1614145778464" duration="655000" />
       <workItem from="1614146643314" duration="15366000" />
       <workItem from="1614222240917" duration="12410000" />
-      <workItem from="1614320890100" duration="18587000" />
+      <workItem from="1614320890100" duration="20787000" />
     </task>
     <servers />
   </component>

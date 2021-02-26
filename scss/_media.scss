@@ -509,6 +509,10 @@
       width: 90%;
       height: 350px;
    }
+
+   .modal__user {
+      width: 100%;
+   }
 }
 
 @include media(900px) {
@@ -917,6 +921,10 @@
    .tabs__settings__status {
       padding: 20px;
       margin-bottom: 30px;
+   }
+
+   .tabs__appointments__card__main {
+      text-align: justify;
    }
 }
 
