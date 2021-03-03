@@ -25,6 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
    function showTabContent(i = selectedTabIndex) {
       tabsContentItems[i].classList.remove('hide');
       tabsMenuListItems[i].classList.add('tabs__menu__li--active');
+
+      if (document.querySelector('.feedback')) {
+         if (i !== 0) {
+            document.querySelector('.feedback').style.display = 'none';
+         } else {
+            document.querySelector('.feedback').style.display = 'block';
+         }
+      }
    }
 
    hideTabContent();
@@ -37,14 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
             hideTabContent();
             showTabContent(index);
             localStorage.setItem('selectedTabIndex', index)
-
-            if (document.querySelector('.feedback')) {
-               if (index !== 0) {
-                  document.querySelector('.feedback').style.display = 'none';
-               } else {
-                  document.querySelector('.feedback').style.display = 'block';
-               }
-            }
          }
       })
    })

@@ -164,7 +164,6 @@ input[type=number] {
   background-color: #00B1B9;
   cursor: pointer;
   transition: 0.3s all ease;
-  text-transform: capitalize;
 }
 .registration img {
   margin-right: 10px;
