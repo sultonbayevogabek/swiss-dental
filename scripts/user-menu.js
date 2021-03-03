@@ -1,5 +1,5 @@
-const elUserMenu = document.querySelector('.user__menu');
-const elModalUser = document.querySelector('.modal__user');
+const elUserMenu = document.querySelector('.user__menu'),
+   elModalUser = document.querySelector('.modal__user');
 
 function clearClasses() {
    elModalUser.classList.remove('fade-out', 'show', 'fade-in');

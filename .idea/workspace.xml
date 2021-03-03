@@ -40,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3d_models-master" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -97,7 +97,11 @@
       <workItem from="1614145778464" duration="655000" />
       <workItem from="1614146643314" duration="15366000" />
       <workItem from="1614222240917" duration="12410000" />
-      <workItem from="1614320890100" duration="20787000" />
+      <workItem from="1614320890100" duration="21536000" />
+      <workItem from="1614400883857" duration="606000" />
+      <workItem from="1614699122761" duration="3228000" />
+      <workItem from="1614766209957" duration="525000" />
+      <workItem from="1614767165544" duration="1560000" />
     </task>
     <servers />
   </component>
@@ -129,10 +133,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1614149032297" />
-    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1614237670097">
+    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1614402044106">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614237670097" />
+    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614402044106" />
     <state x="159" y="11" key="SettingsEditor" timestamp="1614341579019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

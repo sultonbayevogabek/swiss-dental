@@ -39,8 +39,10 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 230px;
+   min-width: 230px;
    height: 56px;
+   padding-left: 15px;
+   padding-right: 15px;
    border: none;
    background-color: $MAIN-LIGHT-BLUE;
    cursor: pointer;
@@ -69,7 +71,7 @@
 
 .user__menu {
    position: relative;
-   width: 260px;
+   min-width: 260px;
    padding: 0 10px 0 11px;
 
    .user__img__wrapper {
@@ -77,16 +79,22 @@
       height: 42px;
       border-radius: 50%;
       border: 3px solid white;
-      margin-right: 10px;
+      margin-right: 8px;
    }
 
    .icon__bottom {
       display: block;
-      width: 18px;
-      height: 20px;
-      background: url("../img/icons/dropdownarrowwhite.svg");
-      background-size: 100% 100%;
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/icons/dropdownacccount.svg");
+      background-size: 15px 9px;
+      background-position: center;
+      background-repeat: no-repeat;
    }
+}
+
+.user__menu__text {
+   margin-right: 6px;
 }
 
 .user__img__wrapper {
@@ -129,36 +137,47 @@
 .modal__content {
    padding-top: 34px;
 
-   a {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      padding: 15px 0 15px 37px;
-      color: $MAIN-DARK-BLUE;
-
-      &:hover,
-      &:focus {
-         background-color: rgb(229, 247, 248);
-      }
-   }
-
-   .setting__link {
-      margin-bottom: 59px;
-   }
-
-   .exit__link {
-      padding-top: 23px;
-      padding-bottom: 23px;
+   hr {
+      width: 221px;
+      height: 1px;
+      margin-top: 64px;
+      margin-bottom: 0;
+      border: none;
+      background-color: rgba($MAIN-DARK-BLUE, 0.1);
    }
 }
 
-.line {
-   width: 221px;
-   height: 2px;
-   margin: 0 auto;
-   opacity: 0.1;
-   background-color: $MAIN-DARK-BLUE;
-   border-radius: 2px;
+.account-dropdown-link {
+   display: flex;
+   align-items: center;
+   padding-left: 37px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+
+   &:hover {
+      background-color: #E5F7F8;
+   }
+
+   span:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 24px;
+      height: 24px;
+      margin-right: 14px;
+   }
+
+   span:last-child {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      color: $MAIN-DARK-BLUE;
+   }
+}
+
+.last {
+   padding-top: 23px;
+   padding-bottom: 23px;
 }
 
 @keyframes fadeIn {

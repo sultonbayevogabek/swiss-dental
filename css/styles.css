@@ -156,8 +156,10 @@ input[type=number] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 230px;
+  min-width: 230px;
   height: 56px;
+  padding-left: 15px;
+  padding-right: 15px;
   border: none;
   background-color: #00B1B9;
   cursor: pointer;
@@ -182,7 +184,7 @@ input[type=number] {
 
 .user__menu {
   position: relative;
-  width: 260px;
+  min-width: 260px;
   padding: 0 10px 0 11px;
 }
 .user__menu .user__img__wrapper {
@@ -190,14 +192,20 @@ input[type=number] {
   height: 42px;
   border-radius: 50%;
   border: 3px solid white;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .user__menu .icon__bottom {
   display: block;
-  width: 18px;
-  height: 20px;
-  background: url("../img/icons/dropdownarrowwhite.svg");
-  background-size: 100% 100%;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icons/dropdownacccount.svg");
+  background-size: 15px 9px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.user__menu__text {
+  margin-right: 6px;
 }
 
 .user__img__wrapper {
@@ -239,31 +247,43 @@ input[type=number] {
 .modal__content {
   padding-top: 34px;
 }
-.modal__content a {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 15px 0 15px 37px;
-  color: #29295F;
-}
-.modal__content a:hover, .modal__content a:focus {
-  background-color: #e5f7f8;
-}
-.modal__content .setting__link {
-  margin-bottom: 59px;
-}
-.modal__content .exit__link {
-  padding-top: 23px;
-  padding-bottom: 23px;
+.modal__content hr {
+  width: 221px;
+  height: 1px;
+  margin-top: 64px;
+  margin-bottom: 0;
+  border: none;
+  background-color: rgba(41, 41, 95, 0.1);
 }
 
-.line {
-  width: 221px;
-  height: 2px;
-  margin: 0 auto;
-  opacity: 0.1;
-  background-color: #29295F;
-  border-radius: 2px;
+.account-dropdown-link {
+  display: flex;
+  align-items: center;
+  padding-left: 37px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.account-dropdown-link:hover {
+  background-color: #E5F7F8;
+}
+.account-dropdown-link span:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.account-dropdown-link span:last-child {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #29295F;
+}
+
+.last {
+  padding-top: 23px;
+  padding-bottom: 23px;
 }
 
 @keyframes fadeIn {
