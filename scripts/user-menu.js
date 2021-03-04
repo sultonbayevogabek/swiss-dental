@@ -11,6 +11,7 @@ elUserMenu.addEventListener('click', (e) => {
    }
    if (!elModalUser.classList.contains('fade-in')) {
       document.removeEventListener('animationend', clearClasses);
+      elModalUser.classList.remove('fade-out');
       elModalUser.classList.add('fade-in', 'show');
 
       window.addEventListener('click', (e) => {

@@ -40,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3d_models-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../NAJOT TALIM/Libraries" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -101,7 +101,8 @@
       <workItem from="1614400883857" duration="606000" />
       <workItem from="1614699122761" duration="3228000" />
       <workItem from="1614766209957" duration="525000" />
-      <workItem from="1614767165544" duration="4011000" />
+      <workItem from="1614767165544" duration="5984000" />
+      <workItem from="1614852025581" duration="636000" />
     </task>
     <servers />
   </component>
@@ -133,10 +134,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1614149032297" />
-    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1614402044106">
+    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1614853587482">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614402044106" />
+    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614853587482" />
     <state x="159" y="11" key="SettingsEditor" timestamp="1614341579019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
